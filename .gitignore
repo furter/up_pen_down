@@ -1,0 +1,7 @@
+*.log
+*.tuc
+*.tuo
+*.tui
+*.tmp
+*.swp
+.DS_Store

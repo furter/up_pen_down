@@ -1,8 +1,12 @@
+
+\enableregime[utf-8] 
 \starttext
 
+\title {
 DXY's perambulation
+}
 
-Multiplicité des résultats du plotter
+\subject {Day 1 — Project 1 / Plotter Specificities}
 
 Trace/trame/texture
 Couches
@@ -15,25 +19,72 @@ Confrontation de deux modes de reproductions, le plotter qui correspond aux ann�
 > Décomposition des couche cmjn, apparition de l'outils plotter au travers de l'offset
 2- Plottage direct sur la plaque
 > décalage production unique/en série
-Images:
+
+
+Page test DXY Roland
+
+
+ \externalfigure[roland1.jpeg][width=200px]
+
+
+ \externalfigure[roland2.jpeg][width=200px]
+
+
+ \externalfigure[roland3.jpeg][width=200px]
+
+
+ \externalfigure[roland4.jpeg][width=200px]
+ 
+ 
+
+\subject {Day 2 — Project 2 / Page test}
+
+ 
+ Images
 - XVIIè siècle plan, coupe et vue des façades de palais ou d'hôtels particuliers. Architecture et fortifications. 
 - 
+-
+-
+-
+-
+-
+-
+
+\subject {Day 3 — Project 3}
+
+DXY's perambulation
+
 Le plotter est un outil pour tracer des plans. Il a la particularité de se déplacer à travers le plan de la feuille pour dessiner. Nous envisageons l'architecture comme la mise en relation d'une forme avec un espace et des corps. Pour rendre compte de cela dans notre projet nous pensons intervenir sur le déplacement du plotter dans l'espace de la page. Nous nous interrogeons désormais sur la définition d'un espace (d'une architecture) par la déambulation.
+
 Direction 1.0:
 
 Mettre en place un système simple de tracking pour pouvoir tester assez rapidement l'impression de ces mouvements dans l'espace avec le plotter.
 
 L'idée était d'abord d'utiliser les fonctions de nos smartphone, mais en vue du temps nous allons tester un tracking lumineux avec processing.
 
-Code processing utilisé:
 
-/**
- * Brightness Tracking 
- * by Golan Levin. 
- * 
- * Tracks the brightest pixel in a live video signal. 
- */
- 
- \externalfigure[ce3.png]
+
+DXYRepresentation
+Interested in tracking ourselves in the space, and outputting that directly to the plotter
+we didn't have much time. So we used a script which tracks brightness.
+using Golan Levin's Brightness Tracking
+moving the computer, not the light
+points represent the brightest points in the space. Program has a 'ticker', you can probably change timing.
+idea: fix a webcam, to put a light on our heads, track trajectories
+relate movement of the plotter to movement of the plotter
+coordinates are connected
+take the information, use it as an input. Would like to do this live
+Each ten seconds the program combines the points into a ' path' and sends it to the plotter
+OSP: setup to track people with light ... why? can you be more ambitious with this? there is maybe more interesting ways to do it?
+It wasn't the idea to track with a cam / light / movement. We wanted to track with a phone (GPS?)
+We capture movement in space.
+cartography is a large field ... you will cross interesting questions: the reference systems you will cross. translating from xy (plan/blueprint/map) to a map (mercator, ...)
+a shift of scale ... depending of the difference between scales
+3 different reference systems that overlap, overlay, interfere
+OSP does not want you to miss the point?
+technical problams are cultural
+if we want to realise the project ... we need a developer to do this project?
+change your way of working means your project changes (every technology has its own meaning)
+don't forget where you are : )
 
 \stoptext

@@ -1,4 +1,34 @@
 % Ici, le fichier pour les styles
 \startenvironment styles
 \setupwhitespace[big]
+
+
+% UTF-8 
+    \enableregime[utf-8]              % Enters unicode 
+    %\setupencoding[default=uc]       % Uses unicode fonts only
+
+ 
+ 
+% MARGES/FORMAT
+    %format
+    \setuppapersize[A5][A5]  
+    
+    %marges
+    \setuplayout[  
+        backspace=50mm,
+        topspace=15mm,
+        width=80mm,
+        height=185mm,
+        leftmargin=20mm,
+        rightmargin=0mm,
+        header=0mm, % removes header
+        grid=yes, % activates baseline grid
+        ]
+
+  
+     % FOLIO
+    \setuppagenumbering[location=footer, style={\setupbodyfont[umepgothicvertical, 14pt]}] 
+
+
+
 \stopenvironment

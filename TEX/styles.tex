@@ -11,7 +11,12 @@
  
 % MARGES/FORMAT
     %format
-    \setuppapersize[A5][A5]  
+%     \setuppapersize[A5][A5]  
+\definepapersize[sheet][
+    width=156mm,
+    height=239mm
+]  
+\setuppapersize[sheet]
     
     %marges
     \setuplayout[  

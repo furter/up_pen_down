@@ -29,10 +29,34 @@
         header=0mm, % removes header
         grid=yes, % activates baseline grid
         ]
-
-  
-     % FOLIO
+    
+    %IMAGES
+    %hauteur
+    %largeur
+    %position
+    
+    %MISE EN PAGE
+    %titretexte
+    %titrecourant (rappel de nom_chapitre)
+    %notes
+    %appel de notes
+    %Nom d'œuvre
+    %Citations
+    % folio
     \setuppagenumbering[location=footer, style={\setupbodyfont[umepgothicvertical, 14pt]}] 
+   
+   %TYPO
+   
+   %JUSTIFICATION
+    \setuptolerance[verytolerant] % justification settings
+    \interlinepenalty=8000 % tries to avoid widows
+    \widowpenalty=8000 % tries to avoid widows
+    \clubpenalty=8000 % tries to avoid widows
+    \doublehyphendemerits=1000000 % tries to avoid consecutive hyphenations
+    %\setupfonthandling [hz] [min=50,max=50,step=10]
+    %\setupalign[hz, hanging]
+    
+    %PAGE TITRE PROJET (CHAPITRE) 
 
 
 

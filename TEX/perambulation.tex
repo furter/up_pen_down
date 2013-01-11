@@ -1,21 +1,23 @@
 \startcomponent 
 \enableregime[utf-8] 
 
-\starttypescript [sans] [logo] 
-    \definefontsynonym [Sans]            [logo] [handling=pure]
-\stoptypescript
-\definetypeface [logo] [ss] [sans] [logo]
-\setupbodyfont[logo, 8pt]
+ \usemodule[simplefonts]
+
+\definesimplefont[logo][logo][size=9pt] 
+
+
+\setupbodyfont[logo, 12pt]
+
 \starttext
 
 \title {
 DXY's perambulation
 }
-
+\logo
 Photo du plotter
 1 - Le plotter Roland étant à notre disposition, interroger l'outil nous semblait être une piste intéressante. Dans un but d'expérimentation formelle, nous sommes revenu à son époque d'utilisation en ayant pour idée de le confronter à d'autres moyens d'impressions tels que l'offset. Nous avons cherché diverses possibilités d'expérimentations formelles, comme l'utilisation le plottage direct sur la plaque offset, l'insolation de la plaque offset à partir d'un typon ou la décomposition d'une image CMJN.
 
-Photo des commandes du plotter
+ Photo des commandes du plotter
 2 - La recherche d'un contenu à produire qui parlerait directement de l'outil nous a conduit vers la page test d'impression du plotter Roland, disponible dans la machine. 
 
 Scanns des page tests

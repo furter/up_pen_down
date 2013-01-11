@@ -26,9 +26,8 @@
         ]
     
     %IMAGES
-    %hauteur
-    %largeur
-    %position
+%\defineexternalfigure[nomimg][test][width=3cm,background=color,backgroundcolor=green]
+\setupexternalfigures[maxwidth=3cm]
     
     %MISE EN PAGE
     %titretexte
@@ -41,7 +40,19 @@
     \setuppagenumbering[location=footer, style={\setupbodyfont[umepgothicvertical, 14pt]}] 
    
    %TYPO
-   
+% Choix de la typographie
+%\definebodyfont[9pt][ss][…,…=…,…] 
+ \usemodule[simplefonts]
+
+\definesimplefont[univers][universelseregular][size=9pt] 
+
+%\setupbodyfont[logo, ss, 8pt]
+\univers  
+
+%réglage interlignage
+\setupinterlinespace[11pt]     
+
+
    %JUSTIFICATION
     \setuptolerance[verytolerant] % justification settings
     \interlinepenalty=8000 % tries to avoid widows

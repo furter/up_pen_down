@@ -7,7 +7,7 @@
     \enableregime[utf-8]              % Enters unicode 
     %\setupencoding[default=uc]       % Uses unicode fonts only
 
- 
+    \setuppagenumbering [alternative=doublesided]
  
 % MARGES/FORMAT
     %format
@@ -47,25 +47,34 @@
             ]
     %titrecourant (rappel de nom_chapitre)
         \setupheader[style=\tfxx]
-      \setupheadertexts [{\getmarking[title]}]     [\tfx{GIT, CE CONNARD} ]
+      \setupheadertexts [{\getmarking[title]}]     [\tfx{Up Pen Down or the git experience} ]
    
     %notes
+
     \setupnote[footnote][location=text, way=bypage, numberconversion=set 2, style={\bf}]
-    \setupnotetext[footnote][location=left, before={\startalignment[flushleft]}, after=\stopalignment] 
+%    \setupnotetext[footnote][location=left, before={\startalignment[flushleft]}, after=\stopalignment] 
+
 
     
     %appel de notes
     %voir ficher texte
     
-    %Nom d'œuvre
-    %Citations
+    %Nomdoeuvre
+    %citations
+    \def\citations#1%
+    {
+        {\logocit #1}
+    }
+    \def\logoregularitalique#1%
+    {
+        {\logoregit #1}
+    }
+    
     % folio
     \setuppagenumbering[location=footer, style={\setupbodyfont[12pt]}] 
    
  
 
-%r�glage interlignage
-\setupinterlinespace[11pt]     
 
 
 

@@ -1,7 +1,11 @@
+*.pdf
+*.mp
 *.log
 *.tuc
 *.tuo
+*.top
 *.tui
 *.tmp
 *.swp
+*.kate-swp
 .DS_Store

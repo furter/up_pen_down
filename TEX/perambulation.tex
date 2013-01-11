@@ -6,27 +6,6 @@
 \environment styles
 
 
-%\definepapersize[format] [width=110mm, height=170mm]
-%\setuppapersize[format, landscape][format, landscape]
-%    \setuplayout[ 
-%        backspace=10mm,
-%        topspace=20mm,
-%        width=150mm,
-%        height=80mm,
-%        leftmargin=5mm,
-%        rightmargin=5mm,
-%        header=5mm, % removes header
-%        grid=yes, % activates baseline grid
-%        ]
-%      %titrecourant (rappel de nom_chapitre)
-%        \setupheader[]
-%      \setupheadertexts []     []
-% \usemodule[simplefonts]
-%
-%\definesimplefont[logo][logo][size=9pt] 
-%
-
-\setupbodyfont[logo, 12pt]
 
 \starttext
 
@@ -36,6 +15,28 @@
 }
 
 \page 
+
+%\definepapersize[format] [width=110mm, height=170mm]
+\setuppapersize[format, landscape][format, landscape]
+    \setuplayout[ 
+        backspace=10mm,
+        topspace=20mm,
+        width=150mm,
+        height=80mm,
+        leftmargin=5mm,
+        rightmargin=5mm,
+        header=5mm, % removes header
+        grid=yes, % activates baseline grid
+        ]
+      %titrecourant (rappel de nom_chapitre)
+        \setupheader[]
+      \setupheadertexts []     []
+ \usemodule[simplefonts]
+
+\definesimplefont[logo][logo][size=9pt] 
+
+
+\setupbodyfont[logo, 12pt]
 
 \startcolumns[n=2]
 
@@ -143,23 +144,19 @@ Plotter (wikipedia): }
 
 {\tfxx A.J / D.V / G.F }
 
-%\page
+\page
 \stopcolumns
-%\setuppapersize[format, portrait][format, portrait]
-%    \setuplayout[ 
-%        backspace=20mm,
-%        topspace=10mm,
-%        width=70mm,
-%        height=150mm,
-%        leftmargin=5mm,
-%        rightmargin=5mm,
-%        header=5mm, % removes header
-%        grid=yes, % activates baseline grid
-%        ]
-%
-%\stoptext
-%\starttext
-%
-%
-%\stoptext
+\setuppapersize[format, portrait][format, portrait]
+    \setuplayout[ 
+        backspace=20mm,
+        topspace=10mm,
+        width=70mm,
+        height=150mm,
+        leftmargin=5mm,
+        rightmargin=5mm,
+        header=5mm, % removes header
+        grid=yes, % activates baseline grid
+        ]
+
+\stoptext
 \stopcomponent

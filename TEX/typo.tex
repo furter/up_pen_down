@@ -4,14 +4,19 @@
    %TYPOGRAPHIE
 % Choix de la typographie du texte courant
 \usemodule[simplefonts]
-\definesimplefont[universt][universelseregular][size=18pt]
-\definesimplefont[universsb][universelseregular][size=14pt]
-\definesimplefont[universssb][universelsebold][size=9pt]
-\definesimplefont[universsssb][universelselight][size=9pt]
+\definesimplefont[logot][logobold][size=18pt]
+\definesimplefont[logosb][logobold][size=14pt]
+\definesimplefont[logossb][logo][size=8pt]
+\definesimplefont[logosssb][logo][size=8pt]
+\definesimplefont[citations][UniversElse-Light][size=8pt]
 
- \setuphead[title][style=\universt]
-  \setuphead[subsubject][style=\universsb]
- \setuphead[subsubsubject][style=\universssb]
-  \setuphead[subsubsubsubject][style=\universsssb]
+
+\setuphead[title][style=\logot]
+\setuphead[subsubject][style=\logosb]
+\setuphead[subsubsubject][style=\logossb]
+\setuphead[subsubsubsubject][style=\logosssb]
+\setuphead[citations][style=\citations]
+  
+  \setupbodyfont[logo,8pt]
   
 \stopenvironment

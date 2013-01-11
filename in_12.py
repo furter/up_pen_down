@@ -2,13 +2,6 @@
 sdoc = params["input"]
 tdoc = params["output"]
 
-x_offset = 0
-y_offset = 0
-#try:
-    #x_offset = params["xo"]
-    #y_offset = params["yo"]
-#except Exception:
-    #pass
 
 t0 = [
     [8,25,32,1],
@@ -30,8 +23,14 @@ pcount = sinfo["page_count"]
 swidth = bbox["width"]
 sheight = bbox["height"]
 
-twidth = 8 * swidth
-theight = 4 * sheight
+#twidth = 8 * swidth
+#theight = 4 * sheight
+twidth = 2862.9921
+theight = 1984.252
+
+
+x_offset = (twidth - (8*swidth)) / 2.0
+y_offset = (theight - (4*sheight)) / 2.0
 
 imposition_plan = []
 recto_pages = []

@@ -1,0 +1,1467 @@
+\startcomponent *
+\enableregime[utf-8] 
+\definepapersize[110x170] [width=110mm][height=170mm]
+\title {Turtle graphic} 
+\starttext 
+\definebodyfont[11pt]
+
+\blank
+\setupcolumns[n=2, ntop=4]
+     \startcolumns
+
+The turtle has three attributes:\blank
+	1.	a location\blank
+	2.	an orientation\blank
+	3.	a pen, itself having attributes such as color, width, and up versus down.\blank
+The turtle moves with commands that are relative to its own position, such as "move forward 10 spaces" and "turn left 90 degrees". The pen carried by the turtle can also be controlled, by enabling it, setting its color, or setting its width. A student could understand (and predict and reason about) the turtle's motion by imagining what they would do if they were the turtle. Seymour Papert called this "body syntonic" reasoning.
+From these building blocks one can build more complex shapes like squares, triangles, circles and other composite figures. Combined with control flow, procedures, and recursion, the idea of turtle graphics is also useful in a Lindenmayer system for generating fractals.
+Turtle geometry is also sometimes used in graphics environments as an alternative to a strictly coordinate-addressed graphics system.
+Turtle graphics were added to the Logo programming language by Seymour Papert in the late 60s to support Papert's version of the turtle robot, a simple robot controlled from the user's workstation that is designed to carry out the drawing functions assigned to it using a small retractable pen set into or attached to the robot's body. Turtle geometry works somewhat differently from (x,y) addressed Cartesian geometry, being primarily vector-based (i.e. relative direction and distance from a starting point) in comparison to coordinate-addressed systems such as PostScript. As a practical matter, the use of turtle geometry instead of a more traditional model mimics the actual movement logic of the turtle robot. The turtle is traditionally and most often represented pictorially either as a triangle or a turtle icon (though it can be represented by any icon).
+Papert's daughter, Artemis, has been using turtle graphics to explore the relationship between art and algorithm.
+Today, Turtle graphics implementations are available for all major desktop and mobile platforms.\blank
+
+\useURL[lien : http://en.wikipedia.org/wiki/Turtle_graphics]
+
+% \externalfigure[../IMAGES/ARC/reference/video/Capture d’écran 2013-01-10 à 17.20.07.png]
+% \externalfigure[../IMAGES/ARC/reference/video/Capture d’écran 2013-01-10 à 17.20.55.png]
+  %\externalfigure[../IMAGES/ARC/reference/video/Capture d’écran 2013-01-10 à 17.23.14.png]
+ %  \externalfigure[../IMAGES/ARC/reference/video/Capture d’écran 2013-01-10 à 17.24.29.png]
+
+ \page
+ 
+  \externalfigure [../IMAGES/ARC/Turtle/Num14.jpg]
+ \externalfigure [../IMAGES/ARC/Turtle/Num15.jpg]
+ \externalfigure [../IMAGES/ARC/Turtle/Num16.jpg]
+ \externalfigure [../IMAGES/ARC/Turtle/Num17.jpg]
+ 
+ \page
+ 
+  \setupcolumns[n=2, ntop=4]
+     \startcolumns
+
+
+{\tfc Turtle Expérience}
+
+\blank
+C'est autour du concept de la Turtle que nous avons basé notre démarche de dessin durant le workshop. La Turtle, née dans les années 70, inventé par Hal Abelson et Andrea Disessa, propose aux jeunes élèves d'appréhender et d'explorer les propriétés visuelles mathématiques à travers un langage très simple de programmation. A l'aide de ce langage, il s'agit de manoeuvrer une "tortue" pour qu'elle trace lignes et courbes.
+
+Chaque ligne dessinée est  déterminée par l'angle directionnel ainsi que par un pas d'avancé déterminant la longueur du tracé. Il faut ainsi concevoir la tortue comme une entité se déplaçant sur la feuille/page virtuelle. On considère que l'on donne des indications de déplacement à cette entité qui par son parcours sur la page dessine une forme.       
+Cherchant dans notre projet à explorer le code comme une partition, on se rapproche de la partition de danse qui semble entrer en résonnance. 
+Comment le code devient-il l'outils de création dans l'espace ?
+L'outil de la Turtle se révèle être un biais très pédagogique grâce à sa simplicité pour s'approprier et explorer cette question en jouant avec le corps dans l'espace.
+\blank
+
+  \externalfigure [../IMAGES/ARC/photos/Image 5.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 8.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 9.png]\blank
+       \externalfigure [../IMAGES/ARC/photos/Image 11.png]\blank
+\page
+La mise en espace de cette technique exige qu'il y ait d'une part un instructeur, c'est à dire un interlocuteur qui donne les instructions suivant le langage de Turlte, à haute voix et d'une autre part une Turlte, soit la personne qui reçoit et exécute les instructions données.
+
+La Turtle n'écrit pas avec ses pieds, elle est armée d'un pinceau. Nous avons donc fabriqué un certain nombre de pinceaux à partir d'éponge découpé (= plume du pinceau) et de latte de bois (= manche du pinceau). Cependant, ce sont bien ses pieds qui servent d'indice de mesure pour les déplacements.
+
+
+Très vite, les Turtles envahissent le sol de traces lisibles ou... non. L'expérimentation est riche en embuche. Le code pose parfois question, à la fois dans la logique de déplacement de la Turtle, comment dans la création du plein et du délié. 
+
+En effet, la Turtle seule semble avoir du mal à proposer une plume avec un délié efficient. Par rapport à la taille des lettres dessinées, les plumes fabriquées ne sont pas assez grosse. Alors nous vient l'idée de diriger deux tortues sur un même tracé. Ainsi selon l'écart choisi entre les tortues c'est la taille du fût qui varie. De la même manière, si une tortue s'avance d'un pas avant les instructions, alors c'est l'angle de la plume qui varie. 
+
+À travers notre expérimentation du langage, c'est une version augmentée de la Turlte que l'on met ainsi à l'exercice.
+
+
+
+
+
+         \externalfigure [../IMAGES/ARC/photos/Image 7.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 10.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 11.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 13.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 14.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 15.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 16.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 17.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 18.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 19.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 21.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 22.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 23.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 24.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 25.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 26.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 27.png]\blank
+          \externalfigure [../IMAGES/ARC/photos/Image 2.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 3.png]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 4.png]  \blank
+         
+                
+         \externalfigure [../IMAGES/ARC/photos/Image 28.png]    
+              
+\page  
+         \externalfigure [../IMAGES/ARC/photos/Tentative restitution 1.jpg]  [width=20cm]  \page      
+         
+{\tfc
+No-feature}
+
+No Feature est une invitation à développer un espace de travail collectif autour de la typographie dans le cadre de la section quatrième année design graphique, et plus largement au sein de l'école supérieure d'art et de design de Valence. Le projet vise à rassembler des énergies autour d'objets typographiques, quel que soit leur avancement. Les typographies sont partagées de préférence au format UFO, et publiés sous licence libre, invitant les utilisateurs à modifier ou enrichir les projets. Cet espace est ouvert à tout les étudiants de l'école, aux anciens étudiants ainsi qu'aux professeurs.
+Les fichiers de travails sont rassemblés dans un dépôt git. Le site github fonctionne comme hébergeur. Un mode d’emploi pour collaborer en utilisant ces outils est à venir.
+
+          \externalfigure [../IMAGES/ARC/photos/P1070575.JPG] [width=6cm]
+         \externalfigure [../IMAGES/ARC/photos/P1070576.JPG] [width=6cm]
+         \externalfigure [../IMAGES/ARC/photos/P1070579.JPG] [width=6cm]              
+         \externalfigure [../IMAGES/ARC/photos/P1070582.JPG] [width=6cm]         
+         \externalfigure [../IMAGES/ARC/photos/P1070592.JPG] [width=6cm]         
+         \externalfigure [../IMAGES/ARC/photos/P1070595.JPG] [width=6cm]    
+         
+         \page
+         
+         \externalfigure [../IMAGES/ARC/photos/01.png][width=20cm]
+          \externalfigure [../IMAGES/ARC/photos/02.png][width=20cm]
+           \externalfigure [../IMAGES/ARC/photos/03.png][width=20cm]
+            \externalfigure [../IMAGES/ARC/photos/04.png][width=20cm]
+             \externalfigure [../IMAGES/ARC/photos/05.png][width=20cm]
+             
+         
+         
+         
+           
+ \page
+         \externalfigure [../IMAGES/ARC/photos/http---uppendown.hotglue.me-Pistes de recherche du projet en relation au trait .jpg][width=20cm]
+         \externalfigure[../IMAGES/ARC/photos/http---no-feature.github.com-.jpg][width=20cm]
+         
+
+         
+                     
+ 
+       \stopcolumns
+ \page
+ 
+UP PEN DOWN - ref / biblio
+\blank
+Textes:
+\blank
+Fernand Baudin, L'écriture au tableau noir, Retz, 1984
+\blank
+Walter Crane, Line and Form\useURL[ (http://www.gutenberg.org/files/25290/25290-h/25290-h.htm)]
+\blank
+Tim Ingold, Une brève histoire des lignes, Zones Sensibles, 2011
+\blank
+Vilém Flusser, Le geste d'écrire, Flusser Studies, n°8, Mai 2009 \useURL[(www.flusserstudies.net/pag/08/le-geste-d-ecrire.pdf)]
+\blank
+Donald Knuth, Le concept de métafonte, Visible Language, issue 16.1, January 1982 dans Communication et Language, n°55, 1983, pp 40-53\useURL[ (http://www.persee.fr/web/revues/home/prescript/article/colan_0336-1500_1983_num_55_1_1549)]
+\blank
+Donald Knuth, Lessons learned from MetaFont, in visible language, issue 19.1, December 1985
+\blank
+Gerrit Noordzij, The Stroke - theory of writing, Hyphen Press, 2006
+\blank
+Femke Snelting, Scenes of Pressures and relief, 2009 \useURL[(http://snelting.domainepublic.net.textes/pressure.txt)]
+\blank
+Seymour Papert, Turtle Geometry: A Mathematics Made for Learning (extrait), p.31-47
+\blank
+Femke Snelting, Objects and Curves, tiré de "Scenes of Pressures and relief", 2009, non publié. traduction française par OSP.
+\blank
+François Rappo et Jürg Lehni, Typeface as Program.
+\blank
+How long should I work on that curve?, a lecture by François Rappo in the context of Types We Can Make
+\blank
+
+Articles web:
+\blank
+PmWiki (ERG-LIBRE)
+\useURL [http://ludi.be/erg-libre/index.php?n=PmWiki.VirtualBox]
+\blank
+Labanotation : système de notations/partitions pour danseurs/performeurs
+\useURL[http://sarma.be/oralsite/pages/What%27s_the_Score_Publication/]
+\blank
+écriture Touareg - outils, utilisations etc
+\useURL[http://touaregsmirages.canalblog.com/archives/2009/02/10/14466139.html]
+\blank
+écriture en Mésopotamie - article wikipedia
+\blank
+Art rupestre - article wikipedia
+\blank
+
+Vidéos:
+\blank
+Fear et Loathing in Las Vegas - extrait
+\useURL[http://www.youtube.com/watch?v=vUgs2O7Okqc]
+\blank
+Jocelyn Cottencin et Tiago Guedes' Vocabulario:\useURL[ http://www.dailymotion.com/video/x3oclq_vocabulario-jocelyn-cottencin-feat_creation]
+\blank
+Plotter OSP vidéo youtube         
+         
+         
+\setupcolumns[n=2, ntop=4]
+     \startcolumns
+\blank
+\CAP{titanpad/176}
+\blank
+http://osp.titanpad.com/176?
+\blank
+
+2Steps
+\blank
+2steps est le résultat d'une expérimentation à partir de la fonte turtleBase et de différents réglages de la fonction "Expand Stroke..." du logiciel FontForge. Appliquée deux fois, la fonction rend visible la structure des lettres, révélant ainsi les contraintes de sa construction. À partir des résultats générés, les lettres ont été modifiés puis harmonisés pour rendre l'ensemble de la typographie cohérent. 
+\blank
+Jordane Cals, Gwenaël Fradin et Éléonore Jasseny
+
+\blank
+  
+<p> 
+</p>\blank
+
+
+La roquette est un caractère réalisé par Margot Baran, Vincent Duché, Lorène Ceccon, et Alice Jauneau, basé sur la turtle-base. En créant des modules avec la tortue nous avons uniformisé les squelettes des différentes lettres afin d'obtenir un caractère condensé. En opposition à cette structure générée informatiquement, nous lui avons appliqué un brush calligraphique.
+ Appréhender un dessin par le trait plutôt que par le contour nous a initié à un mode moins conventionnel de dessin des caractères typographiques.
+\blank
+<p> 
+</p>\blank
+
+Franklin savait compter deux par deux et lacer ses chaussures. Il voulait composer un alphabet mais ne savait pas faire de courbe. Mais un jour il rencontra l'ami Python qui lui permit de réaliser son rêve en toute liberté...
+Anaïs Alauzen, Camille Chatelaine, Alexandra Rio et David Vallance
+\blank
+<p>
+Intro\blank
+
+La Roquette, Franklin et 2steps sont des typographies crées à partir  de TurtleBase.
+Turtlebase a été déssiné lors de la première session du workshop "upanddown", animé par OSP. Cet alphabet collaboratif est le résultat d'une interprétation chorégraphique 
+ sur base du langage de programmation LOGO.(http://www.youtube.com/watch?v=BTd3N5Oj2jk). LOGO est un langage à but éducatif apparu en 1967. Il est essentiellement connu pour sa tortue graphique.</p>
+\blank
+<p>
+No Feature\blank
+
+No Feature est une invitation à développer un espace de travail collectif autour de la typographie dans le cadre de la section quatrième année design graphique, et plus largement au sein de l'école supérieure d'art et de design de Valence.
+Le projet vise à rassembler des énergies autour d'objets typographiques, quel que soit leur avancement. Les typographies sont partagées de préférence au format UFO, et publiées sous licence libre, invitant les utilisateurs à modifier ou enrichir les projets.
+Cet espace est ouvert à tout les étudiants de l'école, aux anciens étudiants ainsi qu'aux professeurs. 
+
+\blank
+
+Slogan\blank
+
+-Ecrivez 5 roquettes par jour          >
+-Quand c'est libre, c'est Roquette   > aléatoire
+-Si c'est Roquette, c'est la fête      >
+\blank
+
+
+
+
+
+
+
+Turtle\blank
+http://www.youtube.com/watch?v=BTd3N5Oj2jk
+\blank
+wiki
+http://www.youtube.com/watch?v=BTd3N5Oj2jk
+\blank
+During the night everything has moved
+No feature is born.\blank
+
+http://no-feature.github.com/
+https://github.com/no-feature/
+\blank
+MAKE A GITHUB ACCOUNT! KTHX
+type your account name here:\blank
+
+alicejauneau
+jordanecals
+Baranovski 
+Lancelol
+Gwenael-FRADIN
+vincentduche
+lorene-cn
+davidvallance
+anaisalauzen
+EleonoreJasseny\blank
+
+
+(You might need your ssh key
+    To find your ssh key, type
+\useURL[cat ~/.ssh/id_rsa.pub]
+in the terminal)\blank
+
+sans ssh, avec mot de pas:
+git clone https://github.com/no-feature/french-turtles.git
+
+avec ssh, sans mot de pas (il faut ajouter le clé ssh dans le compte github):
+git clone git@github.com:no-feature/french-turtles.git\blank
+
+
+
+distribute tasks:
+- ¨Finish¨ font
+- Look at the python script
+
+- Write introduction to this space
+- Come up with phrases that show fonts
+- Write description of turtle fonts
+
+- Print specimens/announcment ?
+
+- work on css and html for the home page and fonts pages
+
+
+\blank
+***\blank
+to mise a jour the website:
+git push origin master:gh-pages\blank
+
+
+LISTE DES GROUPES / En quête des sources… \blank
+
+1: Alexandra / Anais
+2: Camille / Alice
+3: Jordane / Éléonore
+4 : Gwenaël / Lorène
+5 : Vincent
+\blank
+adresse mail pour tous OSP :
+mail@osp.constantvzw.org
+
+eric@ericschrijver.nl
+echo@stdin.fr\blank
+
+anais.alauzen@esad-gv.fr
+camille.chatelaine@esad-gv.fr
+alexandra.rio@esad-gv.fr
+david.vallance@esad-gv.fr
+alice.jauneau@esad-gv.fr
+gwenael.fradin@esad-gv.fr
+margot.baran@esad-gv.fr
+vincent.duche@esad-gv.fr
+jordane.cals@esad-gv.fr
+eleonore.jasseny@esad-gv.fr
+lorene.ceccon@esad-gv.fr
+      
+\blank
+
+
+http://ludi.be/erg-libre/index.php?n=PmWiki.VirtualBox
+apres erg-open.vdi
+\blank
+Setup git
+\blank
+Ouvrir un terminal
+\blank
+tape:
+git config --global user.name "Your Name Here"
+\blank
+tape:
+git config --global user.email "\useURL[your_email@youremail.com"]
+\blank
+Generer des clés ssh
+\blank
+Ouvrir un terminal
+v
+tape:
+ssh-keygen -t rsa -C "\useURL[your_email@youremail.com"]
+
+il y aura deux questions, juste utilise ENTER les deux fois
+
+affiche ton clé ssh affec le commande:
+
+\useURL[cat ~/.ssh/id_rsa.pub]
+
+Clone the git
+
+git clone git@git.constantvzw.org:/osp.workshop.up-pen-down.git
+
+Move into git
+
+cd osp.workshop.up-pen-down
+
+Adding changes:
+
+git pull
+\useURL[git add nom_de_fichier]
+git commit
+git push o
+
+Rename
+git mv "oldfilename" "newfilename"
+
+Repertory
+cd 
+
+What's inside a folder
+ls
+
+
+
+
+colle ton cle ssh ici:
+
+
+
+
+git config --global user.name "Your Name Here"
+
+
+
+Projet de diplôme autour de la pédagogie des mathématiques. Maître-ignorant.
+Ex. Paradoxe de Zenon, le théorème du sandwitch au jambon. Comment couper un sandwich au jambon en deux parties égales ?
+
+Théorie du vivre ensemble. Paperboard. 
+Kolmogorov: probabilité: la hasard ça se mesure.
+
+Jeter des dés.
+"le hasard mesure 4,6 cm"
+
+théorie des ensembles
+
+math appartient à la physique, donc si le mathématicien mange tout le sandwich le physicien mange aussi le sandwich.
+
+w
+45 left
+fwd 3
+pen up
+180
+fwd 3
+90 left
+pen down
+fwd 3
+pen up
+180
+45 left
+fwd 3
+180
+pen down 
+fwd 3
+pen up
+180
+fwd 3
+90
+pen down
+home
+
+
+
+Un simple B en tirtle
+
+pendown()
+left (90)
+forward (66)
+left (45)
+forward (12)
+left (180)
+forward (40)
+right (90)
+forward (14)
+left (90)
+forward (16)
+right (45)
+forward (15)
+right (45)
+forward (9)
+penup()
+
+
+PROGRAMME MARDI
+
+10h
+
+Show
+  video sorting Algorithm
+
+Explain qu’ils vont faire un performance
+- de quoi on veut parler/montrer
+le rapport entre la geste et la forme
+
+
+- qu'est-ce qu'on veut produire
+
+- comment on travaille la performativité?
+
+Les trois sont liés
+
+what do they wear?
+    bonnets
+    
+    Victor Mantel: performance sonore et corporelle
+    4 personnes; chacun représentait un temps
+    Espace organisé par la musique.
+    Role des permormeurs: faire ressentir la musique physiquement et dans l'espace. Danseurs. Chorégraphie très simple.
+    
+Labanotation : système de notations/partitions pour danseurs/performeurs
+
+http://sarma.be/oralsite/pages/What%27s_the_Score_Publication/
+
+la posture dépend de la lettre.
+avec langage très simple comme turtle, déjà plein d'implications corporelles. Ex. pied comme unité, change ta façon de marcher. ex. Point doit être près de toi.
+
+Difference entre "cubic curve" et "quadratic curve"
+
+CUBIC : Postscript, inkskape, illustrator, 
+moins rapide pour l'ordi mais plus rapide pour l'humain
+
+QUADRATIC : TrueType, 
+plus rapide pour l'ordi mais moins pour l'humain
+
+courbes de béziers et courbe spiro 
+
+Parler du rapport au corps à l'ordi, ou bien 
+
+
+
+Install Linux
+    we add photos
+    
+    http://ludi.be/erg-libre/index.php?n=PmWiki.VirtualBox
+
+11h
+Setup team for manger
+
+Git
+  clone ze git
+  alex’s explain of git through mitosis,
+  clone add commit push pull
+  rajouter fichier text
+
+MIDI
+MIDI
+
+14h
+Explain qu’ils vont faire un performance
+  text Flusser
+    text Kittler
+  text Snelting
+  video Fear\useURL[ &] Loathing
+
+Faire Inkscape Turtle
+Faire font
+
+Le swipe
+Exercise habitudes de geste de création
+
+Exercise dans couple -> écrire
+
+=========
+| Mercredi |
+=========
+9h
+computer aerobics
+we mime our gestures and habits in front of the computer, how we interact with it
+
+Fear \useURL[&] Loathing in Las Vegas: writing -> http://www.youtube.com/watch?v=vUgs2O7Okqc
+
+10h30
+turtle graphics in inkscape:
+\useURL[http://variable.constantvzw.org/define/index.php/Turtle_Graphics]
+Télécharger: \useURL[http://variable.constantvzw.org/define/images/Seymour.zip]
+making a poster
+
+\useURL[__________
+Lettre tortue
+-----------------]
+
+** A **
+
+pendown()
+left(70)
+forward(400)
+right(140)
+forward(400)
+left(180)
+forward(140)
+left(70)
+forward(200) 
+penup() 
+
+** N **
+
+pendown()
+left(90)
+forward(350)
+right(135)
+forward(500) 
+left(135)
+forward(350)
+penup() 
+
+\useURL[-- P --]
+pendown()
+left(90)
+forward(75)
+right(90)
+forward(30)
+right(45)
+forward(20)
+right(45)
+forward(20)
+right(45)
+forward(20)
+right(45)
+forward(30)
+penup() 
+
+\useURL[--U--]
+pendown()
+forward(200)
+left(45)
+forward(100)
+left(45)
+forward(500)
+penup()
+left(90)
+forward(340)
+left(90)
+pendown()
+forward(500)
+left(45)
+forward(100)
+penup()
+
+-V-
+pendown()
+right(180)
+left(70)
+forward(400)
+right(140)
+forward(400)
+left(180)
+penup()  
+
+-Y-
+
+pendown()
+right(180)
+left(70)
+forward(400)
+right(140)
+forward(400)
+left(180)
+forward (400)
+right (40)
+forward(100)
+penup() 
+
+
+\useURL[--Z--]
+pendown()
+forward(400)
+right(135)
+forward(600)
+left(135)
+forward(400)
+penup()
+
+\useURL[--&--]
+pendown()
+left(130)
+forward(250)
+right(20)
+forward(20)
+right(20)
+forward(20)
+right(20)
+forward(20)
+right(20)
+forward(20)
+right(20)
+forward(20)
+right(20)
+forward(20)
+right(20)
+forward(20)
+right(20)
+forward(20)
+right(20)
+forward(20)
+right(20)
+forward(20)
+right(20)
+forward(20)
+right(20)
+forward(20)
+right(20)
+forward(20)
+right(20)
+forward(20)
+right(20)
+forward(20)
+forward(20)
+forward(20)
+left(15)
+forward(25)
+left(15)
+forward(25)
+left(15)
+forward(25)
+left(15)
+forward(25)
+left(15)
+forward(25)
+left(15)
+forward(25)
+left(15)
+forward(25)
+left(15)
+forward(25)
+left(15)
+forward(25)
+left(15)
+forward(25)
+left(15)
+forward(25)
+left(15)
+forward(25)
+left(15)
+forward(25)
+left(15)
+forward(25)
+left(15)
+forward(25)
+left(15)
+forward(25)
+left(15)
+forward(25)
+left(15)
+forward(25)
+penup()
+
+
+
+--L--
+pendown()
+right(90)
+forward(300)
+left(90)
+forward(150)
+penup()
+left(135)
+forward(300)
+right(135)
+forward(300)
+left(135)
+forward(300)
+penup()
+
+
+--J--
+
+pendown()
+forward(140)
+left(180)
+forward(70)
+left(90)
+forward(300)
+right(90)
+forward(150)
+penup()
+
+
+
+--E--
+pendown()
+forward(200)
+right(180)
+forward(200)
+right(90)
+forward(200)
+right(90)
+forward(150)
+right(180)
+forward(150)
+right(90)
+forward(200)
+right(90)
+forward(200)
+penup()
+
+--F--
+pendown()
+left(90)
+forward(200)
+right(90)
+forward(150)
+right(180)
+forward(150)
+right(90)
+forward(200)
+right(90)
+forward(200)
+penup()
+
+--K--
+penup()
+right(90)
+pendown()
+forward(500)
+penup()
+right(180)
+forward(300)
+pendown()
+right(45)
+forward(300)
+right(180)
+forward(230)
+left(80)
+forward(420)
+penup()
+
+
+-1-
+pendown()
+left(90)
+forward(300)
+left(130)
+forward(100)
+penup()
+
+
+--G--
+pendown()
+left(180)
+forward(300)
+left(90)
+forward(300)
+left(90)
+forward(300)
+left(90)
+forward(150)
+left(90)
+forward(150)
+penup()
+
+--R--
+pendown()
+left(90)
+forward(85)
+right(90)
+forward(30)
+right(45)
+forward(20)
+right(45)
+forward(20)
+right(45)
+forward(20)
+right(45)
+forward(30)
+right(180)
+forward(30)
+right(45)
+forward(52)
+penup() 
+
+--Q--
+pendown()
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+right(20)
+forward(20)
+penup()
+
+
+
+--X--
+pendown()
+right(45)
+forward(300)
+left(180)
+forward(150)
+right(90)
+forward(150)
+left(180)
+forward(300)
+penup()
+
+--4--
+pendown()
+forward(250)
+right(180)
+forward(100)
+left(90)
+forward(150)
+right(180)
+forward(350)
+left(143)
+forward(250)
+penup()
+
+
+--2--
+pendown()
+left(180)
+forward(180)
+right(130)
+forward(280)
+left(90)
+forward(100)
+left(90)
+forward(100)
+penup()
+
+--8--
+pendown()
+forward(300)
+right(90)
+forward(300)
+right(90)
+forward(300)
+right(90)
+forward(300)
+left(180)
+forward(600)
+left(90)
+forward(300)
+left(90)
+forward(300)
+penup()
+
+--9--
+pendown()
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(90)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(30)
+penup()
+
+
+--7--
+pendown()
+left(70)
+forward(300)
+left(110)
+forward(150)
+penup()
+left(90)
+forward(120)
+left(90)
+forward(70)
+pendown()
+forward(70)
+penup()
+
+--)--
+pendown()
+left(45)
+forward(200)
+left(45)
+forward(200)
+left(45)
+forward(200)
+left
+penup()  
+
+--(--
+pendown()
+right (180)
+left(45)
+forward(200)
+left(45)
+forward(200)
+left(45)
+forward(200)
+left
+penup()  
+
+--w--
+pendown()
+right(68)
+forward(300)
+left(135)
+forward(300)
+right(135)
+forward(300)
+left(135)
+forward(300)
+penup()
+
+--6--
+pendown()
+left(180)
+forward(300)
+left(90)
+forward(300)
+left(90)
+forward(300)
+left(90)
+forward(150)
+left(90)
+forward(300)
+penup()
+
+--ø--
+pendown()
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(60)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(60)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(180)
+forward(20)
+right(30)
+forward(20)
+right(90)
+forward(110)
+penup()
+
+---3--
+pendown()
+right(90)
+left(75)
+forward(50)
+left(30)
+forward(50)
+left(30)
+forward(50)
+left(30)
+forward(50)
+left(30)
+forward(50)
+left(30)
+forward(50)
+left(30)
+forward(50)
+left(90)
+left(120)
+forward(50)
+left(30)
+forward(50)
+left(30)
+forward(50)
+left(30)
+forward(50)
+left(30)
+forward(50)
+left(30)
+forward(50)
+left(30)
+forward(50)
+left(30)
+penup()
+
+--5--
+pendown()
+left(180)
+forward(180)
+left(90)
+forward(70)
+left(110)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+penup()
+
+--?--
+pendown()
+left(90)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+left(20)
+forward(10)
+left(20)
+forward(10)
+left(30)
+forward(40)
+penup()
+forward(50)
+pendown()
+forward(10)
+penup()
+
+
+--S--
+pendown()
+left(250)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(20)
+left(10)
+forward(40)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+right(10)
+forward(20)
+penup()
+
+** - **
+pendown()
+forward(60)
+penup()
+
+-M-
+right(180)
+pendown()
+right(68)
+forward(300)
+left(135)
+forward(300)
+right(135)
+forward(300)
+left(135)
+forward(300)
+penup()
+
+-O-
+pendown()
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+left(30)
+forward(20)
+penup()
+
+--I--
+pendown()
+forward(100)
+right(180)
+forward(200)
+right(180)
+forward(100)
+left(90)
+forward(500)
+left(90)
+forward(100)
+left(180)
+forward(200)
+penup()
+
+--T--
+pendown()
+left(90)
+forward(500)
+left(90)
+forward(200)
+left(180)
+forward(400)
+penup()
+
+
+
+
+
+
+PRE- PERFORMANCE
+
+Eric: commencer avec un warming up mouvements en relation avec le corp et l'ordinateur. mouvements en boucle.
+gens capables de dire les instructions eux-même / retours des spectateurs/instructeurs qui corrigent. Interaction perfomeurs/instructeurs/publics.
+
+Baton sur notre dos. Pen up/pen down.
+
+1. Mouvements en boucle.
+2. apparition des dessinateurs, puis instructeurs
+3. processus d'écrire
+
+En tout 10 minutes.
+
+Qu'est ce qu'on écrit? Comment on mélange les roles? Séparer dessinateurs instructeurs?
+
+Bien de faire une blague: open shleine? Battle.
+
+- jeux de mot avec "open". définir quelque chose du work shop
+- up pen down
+- o punch line
+- open schlag
+- garder l'idée de chorégraphie.
+- open down ou quelque chose en rapport avec la chorégraphie. Quelque chose avec plusieur fois la meme lettre
+- stroke
+- turtle
+- open turtle
+- meta turtle
+
+
+écrire plusieurs fois open down pour répéter des lettres.
+gens en haut dictent le code
+
+U
+P
+\useURL[&]
+D
+O : Eric et Alice
+W
+N
+
+toujours à deux pour déssiner?
+
+faire rentrer 1 personne, puis deux, puis trois. Si on éfface pas 
+
+P et \useURL[&] en même temps.
+
+esperluette à une autre échelle
+
+résonance
+
+construire lettres en double en même temps.
+
+
+  \stopcolumns  
+
+
+
+
+
+
+         
+         
+         
+\stoptext 
+\stopcomponent 

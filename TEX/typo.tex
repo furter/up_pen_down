@@ -6,12 +6,17 @@
 \usemodule[simplefonts]
 \definesimplefont[logot][logobold][size=18pt]
 \definesimplefont[logosb][logobold][size=14pt]
-\definesimplefont[logossb][logo][size=9pt]
-\definesimplefont[logosssb][logo][size=9pt]
+\definesimplefont[logossb][logo][size=8pt]
+\definesimplefont[logosssb][logo][size=8pt]
+\definesimplefont[citations][UniversElse-Light][size=8pt]
 
- \setuphead[title][style=\logot]
-  \setuphead[subsubject][style=\logosb]
- \setuphead[subsubsubject][style=\logossb]
-  \setuphead[subsubsubsubject][style=\logosssb]
+
+\setuphead[title][style=\logot]
+\setuphead[subsubject][style=\logosb]
+\setuphead[subsubsubject][style=\logossb]
+\setuphead[subsubsubsubject][style=\logosssb]
+\setuphead[citations][style=\citations]
+  
+  \setupbodyfont[logo,8pt]
   
 \stopenvironment

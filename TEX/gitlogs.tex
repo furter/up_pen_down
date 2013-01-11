@@ -1,13 +1,19 @@
 \startcomponent *
 \environment styles
+\environment typo
+\enableregime[utf-8]
 \title {Gitlogs}
 \starttext
 
-Les commentaires insérés à chaque commettre, jusqu'à ce vendredi, 14h.
+    \setuplayout[ 
+        grid=no, % activates baseline grid
+        ]
 
+Les commentaires insérés à chaque commettre, jusqu'à jeudi, 17h20.
+
+%\setuptyping[style= {\tfxx \setupbodyfont[3.5pt] } ]
 \setuptyping[style= \tfxx ]
-\setuptyping[style= {\tfxx \setupinterlinespace[6pt] } ]
-
+\setupinterlinespace[3.5pt]
 \starttyping
 * «micro corrections anti green» écrit Pierreh le deuxième jour à 17:34:58
 *   «merge manuel aussi» écrit Pierreh le deuxième jour à 17:20:42
@@ -184,5 +190,8 @@ Les commentaires insérés à chaque commettre, jusqu'à ce vendredi, 14h.
 * «Camille se lance» écrit Camille le premier jour à 16:48:01
 * 
 \stoptyping
+
+\setupinterlinespace[11pt]
+
 \stoptext
 \stopcomponent

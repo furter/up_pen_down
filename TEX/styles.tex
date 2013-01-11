@@ -1,7 +1,7 @@
 % Ici, le fichier pour les styles
 \startenvironment styles
 \setupwhitespace[big]
-
+\environment typo
 
 % UTF-8 
     \enableregime[utf-8]              % Enters unicode 
@@ -28,7 +28,8 @@
     
     %IMAGES
 %\defineexternalfigure[nomimg][test][width=3cm,background=color,backgroundcolor=green]
-\setupexternalfigures[maxwidth=3cm]
+%exécution image + détermine sa taille maximul
+\setupexternalfigures[maxwidth=4cm]
     
        %TYPO
       \setupbodyfont[9pt]
@@ -36,11 +37,7 @@
     
     %MISE EN PAGE
     %titretexte
-            \setuphead[title][
-            align={nothyphenated, verytolerant, center},
-            aligntitle=float,
-             style=\tfc
-            ]
+
    %sous-titre
             \setuphead[subject][
             align={nothyphenated, verytolerant, center},
@@ -53,7 +50,7 @@
    
     %notes
     \setupnote[footnote][location=text, way=bypage, numberconversion=set 2, style={\bf}]
-    \setupnotedefinition[footnote][location=left, before={\startalignment[flushleft]}, after=\stopalignment] 
+    %\setupnotedefinition[footnote][location=left, before={\startalignment[flushleft]}, after=\stopalignment] 
     
     %appel de notes
     %voir ficher texte
@@ -63,18 +60,9 @@
     % folio
     \setuppagenumbering[location=footer, style={\setupbodyfont[12pt]}] 
    
+ 
 
-   %TYPO
-% Choix de la typographie
-%\definebodyfont[9pt][ss][‚Ä¶,‚Ä¶=‚Ä¶,‚Ä¶] 
- \usemodule[simplefonts]
-
-\definesimplefont[univers][universelseregular][size=9pt] 
-
-%\setupbodyfont[logo, ss, 8pt]
-\univers  
-
-%r√©glage interlignage
+%réglage interlignage
 \setupinterlinespace[11pt]     
 
 

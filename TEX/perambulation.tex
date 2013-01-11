@@ -1,91 +1,36 @@
-\startcomponent *
+\startcomponent 
 \enableregime[utf-8] 
+
+\starttypescript [sans] [logo] 
+    \definefontsynonym [Sans]            [logo] [handling=pure]
+\stoptypescript
+\definetypeface [logo] [ss] [sans] [logo]
+\setupbodyfont[logo, 8pt]
 \starttext
 
 \title {
 DXY's perambulation
 }
 
-\subject {Day 1 — Project 1 / Plotter Specificities}
+Photo du plotter
+1 - Le plotter Roland étant à notre disposition, interroger l'outil nous semblait être une piste intéressante. Dans un but d'expérimentation formelle, nous sommes revenu à son époque d'utilisation en ayant pour idée de le confronter à d'autres moyens d'impressions tels que l'offset. Nous avons cherché diverses possibilités d'expérimentations formelles, comme l'utilisation le plottage direct sur la plaque offset, l'insolation de la plaque offset à partir d'un typon ou la décomposition d'une image CMJN.
 
-Trace/trame/texture
-Couches
-Typon -> transparence -> trace -> specificité
-Résistance/confrontation de l'outil plotter aux outils de recomponention de son époque
-Insolation avec un rétroprojecteur plaque offset/sérigraphie
-Document de test du plotter -> apparition d'une fonction, d'une époque.
-Confrontation de deux modes de recomponentions, le plotter qui correspond aux années 1960 et à un usage spécifique et l'offset qui correspond aux attentes de componentions actuelles.
-1- Proposition d'impression de page test offset en utilisant des trames réalisées avec le plotter.
-> Décomposition des couche cmjn, apparition de l'outil plotter au travers de l'offset
-2- Plottage direct sur la plaque
-> décalage componention unique/en série
+Photo des commandes du plotter
+2 - La recherche d'un contenu à produire qui parlerait directement de l'outil nous a conduit vers la page test d'impression du plotter Roland, disponible dans la machine. 
 
+Scanns des page tests
+3 - Cette page révèle clairement le contexte d'utilisation l'époque et l'usage du Plotter, un outil pour les architectes servant à tracer des plans et des axonométries. 
 
-Page test DXY Roland
+Images d'architecture
+4 - Dans un but d'expérimentation du plotter et au vu de l'apparition marqué d'une époque, nous avons chercher à voir comment pourrait réagir des plans d'architecture et des axonométries à travers les époques, et plus particulièrement le XXe siècle. 
+Nous avons  sélectionné une dizaine d'images pour les tests, et voir ainsi comment l'outil utilisé détermine un visuel de présentation de projet architecturaux.
 
+5 - Après réflexion, nous nous sommes dit que nous manquions de connaissances théoriques et d'expérience en la matière pour aboutir à une réflexion pertinente sur le propos.
+Nous sommes revenu à la définition du plotter (un outil pour tracer des plans) et à sa particularité de se  déplacer à travers le plan de la feuille pour dessiner. Nous avons donc envisagé l'architecture comme la mise en relation d'une forme avec un espace et des corps. Pour rendre compte de cela, nous avons pensé une intervention sur le déplacement du plotter dans l'espace de la page. Nous nous sommes interrogé sur la définition d'un espace (d'une architecture) par la déambulation. L'idée du projet était de tracker la position d'une personne dans un espace à l'aide de son téléphone. 
 
- \externalfigure[IMAGES/PL/roland1.jpeg][width=200px]
+6 - Pour concrétiser assez rapidement cette piste, nous avons utilisé un code Processing capturant à la webcam la trajectoire de la lumière point par point. 
 
+7 - Transmises au plotter, ces coordonnées ont donné lieu au tracé d'un déplacement à l'échelle de la page A3 du plotter. 
 
- \externalfigure[IMAGES/PL/roland2.jpeg][width=200px]
-
-
- \externalfigure[IMAGES/PL/roland3.jpeg][width=200px]
-
-
- \externalfigure[IMAGES/PL/roland4.jpeg][width=200px]
- 
- 
-
-\subject {Day 2 — Project 2 / Page test}
-
- 
- Images
-- XVIIè siècle plan, coupe et vue des façades de palais ou d'hôtels particuliers. Architecture et fortifications. 
-- 
--
--
--
--
--
--
-
-\subject {Day 3 — Project 3}
-
-DXY's perambulation
-
-Le plotter est un outil pour tracer des plans. Il a la particularité de se déplacer à travers le plan de la feuille pour dessiner. Nous envisageons l'architecture comme la mise en relation d'une forme avec un espace et des corps. Pour rendre compte de cela dans notre projet nous pensons intervenir sur le déplacement du plotter dans l'espace de la page. Nous nous interrogeons désormais sur la définition d'un espace (d'une architecture) par la déambulation.
-
-Direction 1.0:
-
-Mettre en place un système simple de tracking pour pouvoir tester assez rapidement l'impression de ces mouvements dans l'espace avec le plotter.
-
-L'idée était d'abord d'utiliser les fonctions de nos smartphone, mais en vue du temps nous allons tester un tracking lumineux avec processing.
-
-
-
-DXYRepresentation
-Interested in tracking ourselves in the space, and outputting that directly to the plotter
-we didn't have much time. So we used a script which tracks brightness.
-using Golan Levin's Brightness Tracking
-moving the computer, not the light
-points represent the brightest points in the space. Program has a 'ticker', you can probably change timing.
-idea: fix a webcam, to put a light on our heads, track trajectories
-relate movement of the plotter to movement of the plotter
-coordinates are connected
-take the information, use it as an input. Would like to do this live
-Each ten seconds the program combines the points into a ' path' and sends it to the plotter
-OSP: setup to track people with light ... why? can you be more ambitious with this? there is maybe more interesting ways to do it?
-It wasn't the idea to track with a cam / light / movement. We wanted to track with a phone (GPS?)
-We capture movement in space.
-cartography is a large field ... you will cross interesting questions: the reference systems you will cross. translating from xy (plan/blueprint/map) to a map (mercator, ...)
-a shift of scale ... depending of the difference between scales
-3 different reference systems that overlap, overlay, interfere
-OSP does not want you to miss the point?
-technical problams are cultural
-if we want to realise the project ... we need a developer to do this project?
-change your way of working means your project changes (every technology has its own meaning)
-don't forget where you are : )
 
 \stoptext
-\stopcomponent

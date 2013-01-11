@@ -11,42 +11,76 @@
  
 % MARGES/FORMAT
     %format
-%     \setuppapersize[A5][A5]  
-\definepapersize[sheet][
-    width=156mm,
-    height=239mm
-]  
-\setuppapersize[sheet]
-    
+<<<<<<< HEAD
+%     \setuppapersize[A5][A5] 
+    \definepapersize [format] [width=110mm, height=170mm]
+    \setuppapersize [format] [format]
     %marges
-    \setuplayout[  
-        backspace=50mm,
-        topspace=15mm,
-        width=80mm,
-        height=185mm,
-        leftmargin=20mm,
-        rightmargin=0mm,
-        header=0mm, % removes header
+    \setuplayout[ 
+        backspace=20mm,
+        topspace=10mm,
+        width=70mm,
+        height=150mm,
+        leftmargin=5mm,
+        rightmargin=5mm,
+        header=5mm, % removes header
         grid=yes, % activates baseline grid
         ]
     
     %IMAGES
-    %hauteur
-    %largeur
-    %position
+%\defineexternalfigure[nomimg][test][width=3cm,background=color,backgroundcolor=green]
+\setupexternalfigures[maxwidth=10cm]
+    
+       %TYPO
+      \setupbodyfont[9pt]
+      \definebodyfontenvironment[default][a=1.5, b=2, c=4, d=6, xx=0.5 ] % defines higher sizes of fonts
     
     %MISE EN PAGE
     %titretexte
+            \setuphead[title][
+            align={nothyphenated, verytolerant, center},
+            aligntitle=float,
+             style=\tfc
+            ]
+   %sous-titre
+            \setuphead[subject][
+            align={nothyphenated, verytolerant, center},
+            aligntitle=float,
+             style=\tfa
+            ]
     %titrecourant (rappel de nom_chapitre)
+        \setupheader[style=\tfxx]
+      \setupheadertexts [{\getmarking[title]}]     [\tfx{GIT, CE CONNARD} ]
+   
     %notes
+    \setupnote[footnote][location=text, way=bypage, numberconversion=set 2, style={\bf}]
+    \setupnotetext[footnote][location=left, before={\startalignment[flushleft]}, after=\stopalignment] 
+
+    
     %appel de notes
+    %voir ficher texte
+    
     %Nom d'œuvre
     %Citations
     % folio
-    \setuppagenumbering[location=footer, style={\setupbodyfont[umepgothicvertical, 14pt]}] 
+    \setuppagenumbering[location=footer, style={\setupbodyfont[12pt]}] 
    
+
    %TYPO
-   
+% Choix de la typographie
+%\definebodyfont[9pt][ss][…,…=…,…] 
+ \usemodule[simplefonts]
+
+\definesimplefont[univers][universelseregular][size=9pt] 
+
+%\setupbodyfont[logo, ss, 8pt]
+\univers  
+
+%réglage interlignage
+\setupinterlinespace[11pt]     
+
+
+
    %JUSTIFICATION
     \setuptolerance[verytolerant] % justification settings
     \interlinepenalty=8000 % tries to avoid widows

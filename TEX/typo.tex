@@ -19,6 +19,14 @@
 \setuphead[subsubsubsubject][style=\logosssb]
 \setuphead[univl][style=\citations]
 
+
+\starttypescript [sans] [logo] 
+    \definefontsynonym [Sans]            [name:logoregular] [handling=pure]
+\stoptypescript
+\definetypeface [logo] [ss] [sans] [logo]
+\setupbodyfont[logo, ss, 8pt]
+
+
   \setupbodyfont[logo,8pt]
 
 %réglage interlignage

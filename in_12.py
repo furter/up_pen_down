@@ -25,7 +25,7 @@ sheight = bbox["height"]
 
 #twidth = 8 * swidth
 #theight = 4 * sheight
-twidth = 2862.9921
+twidth = 2891.3386
 theight = 1984.252
 
 

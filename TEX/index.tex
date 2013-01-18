@@ -1,0 +1,28 @@
+\startcomponent *
+
+\environment styles
+
+\environment typo
+
+\enableregime[utf-8] 
+
+   \starttext
+
+% A new ToC title
+\setupheadtext[content=Index]
+
+% TOC
+% level=4, \subsubsubsections are not listed in TOC
+% alternative=c, space to the page number is filled with dots
+\completecontent[criterium=all]
+
+%\setuplist[chapter][width=5mm, style=bold]
+\setuplist[section][width=10mm, style=bold]
+\setuplist[subsection][width=20mm]
+% pagestyle=normal for changing the appearance of pagenumber
+\setuplist[subsubsection][width=20mm, style=slanted, pagestyle=normal]
+\page % (saut de page, comme ça, tu pourras voir si la table des matières marche)
+\part{title}
+\part{subsubject}
+\stoptext
+\stopcomponent

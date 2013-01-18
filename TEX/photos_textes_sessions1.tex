@@ -4,7 +4,9 @@
 \enableregime[utf-8] 
 
 \starttext
-\title {Turtle graphic} 
+\startalignment[right]
+\title {Turtle\crlf graphic} 
+\page
 
  The turtle has three attributes:\blank
 	1.	a location\blank
@@ -16,26 +18,60 @@ Turtle geometry is also sometimes used in graphics environments as an alternativ
 Turtle graphics were added to the Logo programming language by Seymour Papert in the late 60s to support Papert's version of the turtle robot, a simple robot controlled from the user's workstation that is designed to carry out the drawing functions assigned to it using a small retractable pen set into or attached to the robot's body. Turtle geometry works somewhat differently from (x,y) addressed Cartesian geometry, being primarily vector-based (i.e. relative direction and distance from a starting point) in comparison to coordinate-addressed systems such as PostScript. As a practical matter, the use of turtle geometry instead of a more traditional model mimics the actual movement logic of the turtle robot. The turtle is traditionally and most often represented pictorially either as a triangle or a turtle icon (though it can be represented by any icon).
 Papert's daughter, Artemis, has been using turtle graphics to explore the relationship between art and algorithm.
 Today, Turtle graphics implementations are available for all major desktop and mobile platforms.\blank
+\subsubject { Article Pyramide Diapason Roue Crantée n°3 "Seymour et la Turtle"}
 
 \useURL[lien : http://en.wikipedia.org/wiki/Turtle_graphics]
 
  \page
  
  %\setupcolumns[n=2, ntop=4]
-
+    \setuplayout[ 
+        backspace=0mm,
+        topspace=0mm,
+        width=100mm,
+        height=0mm,
+        leftmargin=5mm,
+        rightmargin=5mm,
+        grid=no, % activates baseline grid
+        ]
      
-  \externalfigure [../IMAGES/ARC/Turtle/Num14.jpg] [width=6cm] \blank
- \externalfigure [../IMAGES/ARC/Turtle/Num17.jpg] [width=10cm]\blank 
- Article Pyramide Diapason Roue Crantée n°3 "Seymour et la Turtle"
- 
+  \externalfigure [../IMAGES/tortue/1.jpg] [width=12cm] \page
+   \externalfigure [../IMAGES/tortue/2.jpg] [width=12cm] \page
+  \externalfigure [../IMAGES/tortue/3.jpg] [width=12cm] \page
+  \externalfigure [../IMAGES/tortue/4.jpg] [width=12cm] \page
+  \externalfigure [../IMAGES/tortue/5.jpg] [width=12cm] \page
+  \externalfigure [../IMAGES/tortue/7.jpg] [width=12cm] \page
+  \externalfigure [../IMAGES/tortue/8.jpg] [width=12cm] \page
+  \externalfigure [../IMAGES/tortue/9.jpg] [width=12cm] \page
+  \externalfigure [../IMAGES/tortue/10.jpg] [width=12cm] \page
+  \externalfigure [../IMAGES/tortue/11.jpg] [width=12cm] \page
+  \externalfigure [../IMAGES/tortue/12.jpg] [width=12cm] \page
+  \externalfigure [../IMAGES/tortue/13.jpg] [width=12cm] \page
+  \externalfigure [../IMAGES/tortue/14.jpg] [width=12cm] \page
+  \externalfigure [../IMAGES/tortue/15.jpg] [width=12cm] \page
+  \externalfigure [../IMAGES/tortue/16.jpg] [width=12cm] \page
+   \externalfigure [../IMAGES/tortue/18.jpg] [width=12cm] \page
+  \externalfigure [../IMAGES/tortue/19.jpg] [width=12cm] \page
+  \externalfigure [../IMAGES/tortue/20.jpg] [width=12cm]
 
- \page
+     \setuplayout[ 
+        backspace=12mm,
+        topspace=10mm,
+        width=85mm,
+        height=150mm,
+        leftmargin=5mm,
+        rightmargin=5mm,
+        header=5mm, % removes header
+        grid=yes, % activates baseline grid
+        ]
+
 
   %\setupcolumns[n=2, ntop=4]
      \startcolumns[n=2]
 
+\startalignment[right]
 
-\title {Turtle\blank Expérience}
+\title {Turtle Expérience}
 
 \blank
  C'est autour du concept de la Turtle que nous avons basé notre démarche de dessin durant le workshop. La Turtle, née dans les années 70, inventé par Hal Abelson et Andrea Disessa, propose aux jeunes élèves d'appréhender et d'explorer les propriétés visuelles mathématiques à travers un langage très simple de programmation. A l'aide de ce langage, il s'agit de manoeuvrer une "tortue" pour qu'elle trace lignes et courbes.
@@ -63,6 +99,7 @@ Très vite, les Turtles envahissent le sol de traces lisibles ou... non. L'expé
 En effet, la Turtle seule semble avoir du mal à proposer une plume avec un délié efficient. Par rapport à la taille des lettres dessinées, les plumes fabriquées ne sont pas assez grosse. Alors nous vient l'idée de diriger deux tortues sur un même tracé. Ainsi selon l'écart choisi entre les tortues c'est la taille du fût qui varie. De la même manière, si une tortue s'avance d'un pas avant les instructions, alors c'est l'angle de la plume qui varie. 
 
 À travers notre expérimentation du langage, c'est une version augmentée de la Turlte que l'on met ainsi à l'exercice.
+\stopalignment[right]
 
 
 
@@ -95,17 +132,21 @@ En effet, la Turtle seule semble avoir du mal à proposer une plume avec un dél
           Restitution publique du workshop. Performance dans le Hall de l'école.
        
               
-\page  
 
 \page
          \externalfigure [../IMAGES/ARC/photos/Tentative restitution 1.jpg]  [width=10cm]  \blank
-                           Tentative de première restitution entre les deux sessions.\page
-         
+                           Tentative de première restitution entre les deux sessions.
+\page
+           \externalfigure [../IMAGES/poster/poster2.jpeg]  [width=10cm]  \blank
+Affiche de la Print-party : dernière session de workshop.
 
-\title {No-feature}
+\title {No-\crlf feature}
+\startalignment[right]
 
 No Feature est une invitation à développer un espace de travail collectif autour de la typographie dans le cadre de la section quatrième année design graphique, et plus largement au sein de l'école supérieure d'art et de design de Valence. Le projet vise à rassembler des énergies autour d'objets typographiques, quel que soit leur avancement. Les typographies sont partagées de préférence au format UFO, et publiés sous licence libre, invitant les utilisateurs à modifier ou enrichir les projets. Cet espace est ouvert à tout les étudiants de l'école, aux anciens étudiants ainsi qu'aux professeurs.
 Les fichiers de travails sont rassemblés dans un dépôt git. Le site github fonctionne comme hébergeur. Un mode d’emploi pour collaborer en utilisant ces outils est à venir.\blank
+\stopalignment
+
 
           \externalfigure [../IMAGES/ARC/photos/P1070575.JPG] [width=4cm]\blank
          \externalfigure [../IMAGES/ARC/photos/P1070576.JPG] [width=4cm]
@@ -115,39 +156,33 @@ Les fichiers de travails sont rassemblés dans un dépôt git. Le site github fo
          \externalfigure [../IMAGES/ARC/photos/P1070595.JPG] [width=4cm]    \blank
          
          \page
-         
+                     \externalfigure [../IMAGES/ARC/photos/07.png][width=10cm]\blank
+            \externalfigure [../IMAGES/ARC/photos/09.png][width=5cm]\blank
+                     \externalfigure[../IMAGES/ARC/photos/http---no-feature.github.com-.jpg][width=20cm]
+        \blank
+
+     Page de la fonderie de No-Feature qui réunit toutes les productions typographiques.
+     
          \stopcolumns
          
             \externalfigure [../IMAGES/ARC/photos/04.png][width=8cm]\blank
              \externalfigure [../IMAGES/ARC/photos/05.png][width=8cm]
           Travail de la typographie par Alice et Gwenaël.
           Page de droite, blog en ligne de collecte des pistes de travail pour la 3éme session.
-             
+
+
         \blank
 
-             
-             
-         
-         
-         
-           
- \page
-         \externalfigure [../IMAGES/ARC/photos/http---uppendown.hotglue.me-Pistes de recherche du projet en relation au trait .jpg][width=20cm]
-
-         \externalfigure[../IMAGES/ARC/photos/http---no-feature.github.com-.jpg][width=20cm]
-        \blank
-
-     Page de la fonderie de No-Feature qui réunit toutes les productions typographiques.
+  
         \useURL [uppendown.hotglue.me]
         \useURL [no-feature.github.com] 
         \page
         
-        \startcolumns[n=3]
-        \starttyping
+        \startcolumns[n=4]
        
+        
 
- ** A **
-
+{\tfxx-- A --
 pendown()
 left(70)
 forward(400)
@@ -159,8 +194,7 @@ left(70)
 forward(200) 
 penup() 
 
-** N **
-
+-- N --
 pendown()
 left(90)
 forward(350)
@@ -186,7 +220,7 @@ right(45)
 forward(30)
 penup() 
 
---U--
+-- U --
 pendown()
 forward(200)
 left(45)
@@ -203,7 +237,7 @@ left(45)
 forward(100)
 penup()
 
--V-
+-- V --
 pendown()
 right(180)
 left(70)
@@ -213,8 +247,7 @@ forward(400)
 left(180)
 penup()  
 
--Y-
-
+-- Y --
 pendown()
 right(180)
 left(70)
@@ -227,8 +260,7 @@ right (40)
 forward(100)
 penup() 
 
-
---Z--
+-- Z --
 pendown()
 forward(400)
 right(135)
@@ -237,7 +269,7 @@ left(135)
 forward(400)
 penup()
 
---&--
+-- & --
 pendown()
 left(130)
 forward(250)
@@ -311,9 +343,7 @@ left(15)
 forward(25)
 penup()
 
-
-
---L--
+-- L --
 pendown()
 right(90)
 forward(300)
@@ -328,9 +358,7 @@ left(135)
 forward(300)
 penup()
 
-
---J--
-
+-- J --
 pendown()
 forward(140)
 left(180)
@@ -341,9 +369,7 @@ right(90)
 forward(150)
 penup()
 
-
-
---E--
+-- E --
 pendown()
 forward(200)
 right(180)
@@ -360,7 +386,7 @@ right(90)
 forward(200)
 penup()
 
---F--
+-- F --
 pendown()
 left(90)
 forward(200)
@@ -374,7 +400,7 @@ right(90)
 forward(200)
 penup()
 
---K--
+-- K --
 penup()
 right(90)
 pendown()
@@ -391,8 +417,7 @@ left(80)
 forward(420)
 penup()
 
-
--1-
+-- 1 --
 pendown()
 left(90)
 forward(300)
@@ -400,8 +425,7 @@ left(130)
 forward(100)
 penup()
 
-
---G--
+-- G --
 pendown()
 left(180)
 forward(300)
@@ -415,7 +439,7 @@ left(90)
 forward(150)
 penup()
 
---R--
+-- R --
 pendown()
 left(90)
 forward(85)
@@ -435,7 +459,7 @@ right(45)
 forward(52)
 penup() 
 
---Q--
+-- Q --
 pendown()
 left(30)
 forward(20)
@@ -465,9 +489,7 @@ right(20)
 forward(20)
 penup()
 
-
-
---X--
+-- X --
 pendown()
 right(45)
 forward(300)
@@ -479,7 +501,7 @@ left(180)
 forward(300)
 penup()
 
---4--
+-- 4 --
 pendown()
 forward(250)
 right(180)
@@ -492,8 +514,7 @@ left(143)
 forward(250)
 penup()
 
-
---2--
+-- 2 --
 pendown()
 left(180)
 forward(180)
@@ -505,7 +526,7 @@ left(90)
 forward(100)
 penup()
 
---8--
+-- 8 --
 pendown()
 forward(300)
 right(90)
@@ -520,17 +541,17 @@ left(90)
 forward(300)
 left(90)
 forward(300)
-penup()
-
-
-
-\stoptyping
-
+penup()}
 
 \stopcolumns
+\page
 
+\startcolumns[n=2]
+ \title{Hotglue}
+         \externalfigure [../IMAGES/ARC/photos/http---uppendown.hotglue.me-Pistes de recherche du projet en relation au trait .jpg] [width=10cm]
+        \tfxx {uppendown.hotglue.me-Pistes de recherche du projet en relation au trait}
+        \stopcolumns
+\stopalignment
 
-      
-         
 \stoptext 
 \stopcomponent 

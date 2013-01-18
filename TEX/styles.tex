@@ -1,6 +1,8 @@
+
 % Ici, le fichier pour les styles
 \startenvironment styles
 \setupwhitespace[big]
+
 \environment typo
 
 % UTF-8 
@@ -11,31 +13,39 @@
  
 % MARGES/FORMAT
     %format
-%     \setuppapersize[A5][A5] 
     \definepapersize [format] [width=115mm, height=175mm]
     \setuppapersize [format] [format]
+   
     %marges
     \setuplayout[ 
         backspace=20mm,
+        cutspace=10mm,
         topspace=10mm,
-        width=70mm,
+        width=85mm,
         height=150mm,
         leftmargin=5mm,
         rightmargin=5mm,
         header=5mm, % removes header
         grid=yes, % activates baseline grid
         ]
+        
+ %alinéa
+ \setupheadertexts[\hfill left(odd) header][] [][right(even) header
+\hfill]
+
     
     %IMAGES
 %\defineexternalfigure[nomimg][test][width=3cm,background=color,backgroundcolor=green]
-%ex�cution image + d�termine sa taille maximum
-\setupexternalfigures[maxwidth=10cm]
+%execution image + determine sa taille maximum
+\setupexternalfigures[maxwidth=11mm]
 
     
        %TYPO
-      \setupbodyfont[logosssb, 9pt]
-      \definebodyfontenvironment[default][a=1.5, b=2, c=4, d=6, xx=0.5 ] % defines higher sizes of fonts
-    
+    %  \setupbodyfont[logosssb, 11pt]
+      \definebodyfontenvironment[default][a=1.5, b=2, c=4, d=6, xx=0.5, ] % defines higher sizes of fonts
+% \setupinterlinespace[10pt]
+       
+
     %MISE EN PAGE
     %titretexte
 
@@ -69,6 +79,8 @@
     {
         {\logoregit #1}
     }
+   
+    
     
     % folio
     \setuppagenumbering[location=footer, style={\setupbodyfont[12pt]}] 
@@ -79,8 +91,8 @@
 
 
    %JUSTIFICATION
-    \setuptolerance[verytolerant] % justification settings
-    \interlinepenalty=8000 % tries to avoid widows
+    %\setuptolerance[verytolerant] % justification settings
+   % \interlinepenalty=8000 % tries to avoid widows
     \widowpenalty=8000 % tries to avoid widows
     \clubpenalty=8000 % tries to avoid widows
     \doublehyphendemerits=1000000 % tries to avoid consecutive hyphenations

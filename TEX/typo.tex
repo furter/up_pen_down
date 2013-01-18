@@ -4,33 +4,34 @@
    %TYPOGRAPHIE
 % Choix de la typographie du texte courant
 \usemodule[simplefonts]
-\definesimplefont[logot][logobold][size=18pt]
+\definesimplefont[logot][logobold][size=55pt]
 \definesimplefont[logosb][logobold][size=14pt]
-\definesimplefont[logossb][logoregular][size=8pt]
-\definesimplefont[logosssb][logoregularitalic][size=8pt]
+\definesimplefont[logossb][logoregular][size=11.5pt]
+\definesimplefont[logosssb][logoregularitalic][size=11.5pt]
 
-\definesimplefont[logocit][logocitation][size=8pt]
-\definesimplefont[logoregit][logoregularitalic][size=8pt]
+%citations
+\definesimplefont[logocit][logocitation][size=9.5pt]
+\definesimplefont[logoregit][logoregularitalic][size=9.5pt]
 
-
+%titres et sous titres
 \setuphead[title][style=\logot]
 \setuphead[subsubject][style=\logosb]
 \setuphead[subsubsubject][style=\logossb]
 \setuphead[subsubsubsubject][style=\logosssb]
 \setuphead[univl][style=\citations]
 
-
+% ??
 \starttypescript [sans] [logoregular] 
-    \definefontsynonym [Sans]            [name:logoregular] [handling=pure]
+    \definefontsynonym [Sans] [name:logoregular] [handling=pure]
 \stoptypescript
-\definetypeface [logoregular] [ss] [sans] [logo]
-\setupbodyfont[logoregular, ss, 8pt]
+\definetypeface [logoregular] [ss] [sans] [logoregular]
+\setupbodyfont[logoregular, ss, 11pt]
 
 
-  \setupbodyfont[logoregular,8pt]
+  \setupbodyfont[logoregular, 11.5pt]
 
 %réglage interlignage
-\setupinterlinespace[9pt]     
+%\setupinterlinespace[9pt]     
 
 
 \stopenvironment

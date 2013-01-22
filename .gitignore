@@ -8,4 +8,5 @@
 *.tmp
 *.swp
 *.kate-swp
+*.gz
 .DS_Store

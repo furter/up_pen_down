@@ -5,6 +5,9 @@
 
 \environment typo
 
+
+\mainlanguage[fr]
+
 % UTF-8 
     \enableregime[utf-8]              % Enters unicode 
     %\setupencoding[default=uc]       % Uses unicode fonts only
@@ -15,17 +18,21 @@
     %format
     \definepapersize [format] [width=115mm, height=175mm]
     \setuppapersize [format] [format]
+    
+    \setcharacterspacing [frenchpunctuation]
    
     %marges
     \setuplayout[ 
         backspace=20mm,
         cutspace=10mm,
         topspace=10mm,
+        bottomspace=10mm,
         width=85mm,
-        height=150mm,
+        height=155mm,
         leftmargin=5mm,
         rightmargin=5mm,
-        header=5mm, % removes header
+        footer=7mm,
+        header=8mm, % removes header
         grid=yes, % activates baseline grid
         ]
         
@@ -37,7 +44,7 @@
     %IMAGES
 %\defineexternalfigure[nomimg][test][width=3cm,background=color,backgroundcolor=green]
 %execution image + determine sa taille maximum
-\setupexternalfigures[maxwidth=11mm]
+%\setupexternalfigures[maxwidth=110mm]
 
     
        %TYPO
@@ -57,14 +64,14 @@
             ]
     %titrecourant (rappel de nom_chapitre)
         \setupheader[style=\tfxx]
-      \setupheadertexts [{\getmarking[title]}]     [\tfx{Git, ce connard} ]
+      \setupheadertexts [{\getmarking[chapter]}]     [\tfx{Git, ce connard} ]
    
     %notes
 
     \setupnote[footnote][location=text, way=bypage, numberconversion=set 2, style={\bf}]
 %    \setupnotetext[footnote][location=left, before={\startalignment[flushleft]}, after=\stopalignment] 
 
-\setcharacterspacing [frenchpunctuation]
+
     
     %appel de notes
     %voir ficher texte
@@ -75,20 +82,15 @@
     {
         {\logocit #1}
     }
-    \def\logoregularitalique#1%
+    \def\logoregularitalic#1%
     {
         {\logoregit #1}
     }
    
-    
-    
+     
     % folio
-    \setuppagenumbering[location=footer, style={\setupbodyfont[12pt]}] 
+    \setuppagenumbering[location=footer, style={\setupbodyfont[10pt]}] 
    
- 
-
-
-
 
    %JUSTIFICATION
     %\setuptolerance[verytolerant] % justification settings

@@ -5,10 +5,13 @@
 
 \starttext
 \startalignment[right]
-\title {Turtle\crlf graphic} 
+\chapter {Turtle\crlf graphic} 
 \page
-
-\citations{The turtle has three attributes:\crlf
+        
+\section {The turtle}        
+\startquotation
+\citations
+{The turtle has three attributes:\crlf
 	1.	a location\crlf
 	2.	an orientation\crlf
 	3.	a pen, itself having attributes such as color, width, and up versus down.\blank
@@ -18,27 +21,30 @@ Turtle geometry is also sometimes used in graphics environments as an alternativ
 Turtle graphics were added to the Logo programming language by Seymour Papert in the late 60s to support Papert's version of the turtle robot, a simple robot controlled from the user's workstation that is designed to carry out the drawing functions assigned to it using a small retractable pen set into or attached to the robot's body. Turtle geometry works somewhat differently from (x,y) addressed Cartesian geometry, being primarily vector-based (i.e. relative direction and distance from a starting point) in comparison to coordinate-addressed systems such as PostScript. As a practical matter, the use of turtle geometry instead of a more traditional model mimics the actual movement logic of the turtle robot. The turtle is traditionally and most often represented pictorially either as a triangle or a turtle icon (though it can be represented by any icon).
 Papert's daughter, Artemis, has been using turtle graphics to explore the relationship between art and algorithm.
 Today, Turtle graphics implementations are available for all major desktop and mobile platforms.}
-\logoregularitalique{\useURL[lien : http://en.wikipedia.org/wiki/Turtle_graphics]}
-
-\subsubject { Article Pyramide Diapason Roue Crantée n°3 "Seymour et la Turtle"}
-
-
- \page
- 
- %\setupcolumns[n=2, ntop=4]
-    \setuplayout[ 
+\stopquotation
+\crlf
+ \logosssb {http://en.wikipedia.org/wiki/Turtle_graphics]}
+   \page
+\section {Article Pyramide Diapason Roue Crantée n°3 "Seymour et la Turtle"}
+\page
+\setuplayout[ 
         backspace=0mm,
+        cutspace=0mm,
         topspace=0mm,
-        width=100mm,
-        height=0mm,
+        bottomspace=0mm,
+        width=110mm,
+        height=170mm,
         leftmargin=5mm,
         rightmargin=5mm,
-        grid=no, % activates baseline grid
+        footer=0mm,
+        header=0mm, % removes header
+        grid=yes, % activates baseline grid
         ]
-     
-  \externalfigure [../IMAGES/tortue/1.jpg] [width=12cm] \page
-   \externalfigure [../IMAGES/tortue/2.jpg] [width=12cm] \page
-  \externalfigure [../IMAGES/tortue/3.jpg] [width=12cm] \page
+
+\stopalignment
+   \page
+   \externalfigure [../IMAGES/tortue/2.jpg] [width=12cm] 
+  \externalfigure [../IMAGES/tortue/3.jpg] [width=12cm] 
   \externalfigure [../IMAGES/tortue/4.jpg] [width=12cm] \page
   \externalfigure [../IMAGES/tortue/5.jpg] [width=12cm] \page
   \externalfigure [../IMAGES/tortue/7.jpg] [width=12cm] \page
@@ -52,138 +58,148 @@ Today, Turtle graphics implementations are available for all major desktop and m
   \externalfigure [../IMAGES/tortue/15.jpg] [width=12cm] \page
   \externalfigure [../IMAGES/tortue/16.jpg] [width=12cm] \page
    \externalfigure [../IMAGES/tortue/18.jpg] [width=12cm] \page
-  \externalfigure [../IMAGES/tortue/19.jpg] [width=12cm] \page
-  \externalfigure [../IMAGES/tortue/20.jpg] [width=12cm]
+  \externalfigure [../IMAGES/tortue/19.jpg] [width=11cm] \page
+  \externalfigure [../IMAGES/tortue/20.jpg] [width=11cm]\page
 
-     \setuplayout[ 
-        backspace=12mm,
+\setuplayout[ 
+        backspace=20mm,
+        cutspace=10mm,
         topspace=10mm,
+        bottomspace=10mm,
         width=85mm,
-        height=150mm,
+        height=155mm,
         leftmargin=5mm,
         rightmargin=5mm,
-        header=5mm, % removes header
+        footer=7mm,
+        header=8mm, % removes header
         grid=yes, % activates baseline grid
         ]
 
-
-  %\setupcolumns[n=2, ntop=4]
-     \startcolumns[n=2]
-
+	\section{Turtle Expérience}
+\startcolumns[n=2]
 \startalignment[right]
 
-\title {Turtle Expérience}
 
-\blank
- C'est autour du concept de la Turtle que nous avons basé notre démarche de dessin durant le workshop. La Turtle, née dans les années 70, inventé par Hal Abelson et Andrea Disessa, propose aux jeunes élèves d'appréhender et d'explorer les propriétés visuelles mathématiques à travers un langage très simple de programmation. A l'aide de ce langage, il s'agit de manœuvrer une "tortue" pour qu'elle trace lignes et courbes.
+	\blank
+	 \logossb {C'est autour du concept de la Turtle que nous avons basé notre démarche de dessin durant le workshop. La Turtle, née dans les années 70, inventé par Hal Abelson et Andrea Disessa, propose aux jeunes élèves d'appréhender et d'explorer les propriétés visuelles mathématiques à travers un langage très simple de programmation. A l'aide de ce langage, il s'agit de manœuvrer une "tortue" pour qu'elle trace lignes et courbes.
+ 
+ \blank
 
 Chaque ligne dessinée est  déterminée par l'angle directionnel ainsi que par un pas d'avancée déterminant la longueur du tracé. Il faut ainsi concevoir la tortue comme une entité se déplaçant sur la feuille/page virtuelle. On considère que l'on donne des indications de déplacement à cette entité qui par son parcours sur la page dessine une forme.       
 Cherchant dans notre projet à explorer le code comme une partition, on se rapproche de la partition de danse qui semble entrer en résonance. 
 Comment le code devient-il l'outil de création dans l'espace ?
-L'outil de la Turtle se révèle être un biais très pédagogique grâce à sa simplicité pour s'approprier et explorer cette question en jouant avec le corps dans l'espace.
-\blank
+L'outil de la Turtle se révèle être un biais très pédagogique grâce à sa simplicité pour s'approprier et explorer cette question en jouant avec le corps dans l'espace.}
+	\blank
+	\blank
 
-  \externalfigure [../IMAGES/ARC/photos/Image 5.png]\blank
-         \externalfigure [../IMAGES/ARC/photos/Image 8.png]\blank
-         \externalfigure [../IMAGES/ARC/photos/Image 9.png]\blank
-       \externalfigure [../IMAGES/ARC/photos/Image 11.png]\blank
-         1\high{re} session. Appropriation des outils dans l'espace. \blank
-         
-\page
- La mise en espace de cette technique exige qu'il y ait d'une part un instructeur, c'est-à-dire un interlocuteur qui donne les instructions suivant le langage de Turlte, à haute voix et d'une autre part une Turlte, soit la personne qui reçoit et exécute les instructions données.
+  \externalfigure [../IMAGES/ARC/photos/Image 5.png][width=4cm]\blank
+         \externalfigure [../IMAGES/ARC/photos/Image 8.png][width=4cm]
+         \externalfigure [../IMAGES/ARC/photos/Image 9.png][width=4cm]
+       \externalfigure [../IMAGES/ARC/photos/Image 11.png][width=4cm]
+        
+  	\logossb {La mise en espace de cette technique exige qu'il y ait d'une part un instructeur, c'est-à-dire un interlocuteur qui donne les instructions suivant le langage de Turlte, à haute voix et d'une autre part une Turlte, soit la personne qui reçoit et exécute les instructions données.
 
 La Turtle n'écrit pas avec ses pieds, elle est armée d'un pinceau. Nous avons donc fabriqué un certain nombre de pinceaux à partir d'éponges découpées (= plume du pinceau) et de lattes de bois (= manche du pinceau). Cependant, ce sont bien ses pieds qui servent d'indice de mesure pour les déplacements.
 
-
 Très vite, les Turtles envahissent le sol de traces lisibles ou… non. L'expérimentation est riche en embûches. Le code pose parfois question, à la fois dans la logique de déplacement de la Turtle, comme dans la création du plein et du délié. 
-
 En effet, la Turtle seule semble avoir du mal à proposer une plume avec un délié efficient. Par rapport à la taille des lettres dessinées, les plumes fabriquées ne sont pas assez grosses. Alors nous vient l'idée de diriger deux tortues sur un même tracé. Ainsi selon l'écart choisi entre les tortues c'est la taille du fût qui varie. De la même manière, si une tortue s'avance d'un pas avant les instructions, alors c'est l'angle de la plume qui varie. 
 
-À travers notre expérimentation du langage, c'est une version augmentée de la Turlte que l'on met ainsi à l'exercice.
-\stopalignment[right]
+À travers notre expérimentation du langage, c'est une version augmentée de la Turlte que l'on met ainsi à l'exercice.} \blank
 
-
-
-
-
-         \externalfigure [../IMAGES/ARC/photos/Image 7.png]\blank       
-         \externalfigure [../IMAGES/ARC/photos/Image 10.png]\blank
-         \externalfigure [../IMAGES/ARC/photos/Image 11.png]\blank
-         \externalfigure [../IMAGES/ARC/photos/Image 13.png]\blank
-         1\high{re} session. Appropriation des outils dans l'espace. \blank
-         \externalfigure [../IMAGES/ARC/photos/Image 14.png]\blank
-         \externalfigure [../IMAGES/ARC/photos/Image 15.png]\blank
-         \externalfigure [../IMAGES/ARC/photos/Image 16.png]\blank          
-         \externalfigure [../IMAGES/ARC/photos/Image 17.png]\blank
-         \externalfigure [../IMAGES/ARC/photos/Image 18.png]\blank
-         \externalfigure [../IMAGES/ARC/photos/Image 19.png]\blank
-         \externalfigure [../IMAGES/ARC/photos/Image 21.png]\blank
-         \externalfigure [../IMAGES/ARC/photos/Image 22.png]\blank
-                  Repas collectif. Essais des outils en extérieur.\blank         
-         \externalfigure [../IMAGES/ARC/photos/Image 23.png]\blank
-         \externalfigure [../IMAGES/ARC/photos/Image 24.png]\blank
-         \externalfigure [../IMAGES/ARC/photos/Image 25.png]\blank
-         \externalfigure [../IMAGES/ARC/photos/Image 26.png]\blank
-         \externalfigure [../IMAGES/ARC/photos/Image 27.png]\blank
-         \externalfigure [../IMAGES/ARC/photos/Image 2.png]\blank
-         \externalfigure [../IMAGES/ARC/photos/Image 4.png]  \blank
-
-         \externalfigure [../IMAGES/ARC/photos/Image 3.png]\blank
-          \externalfigure [../IMAGES/ARC/photos/Image 28.png]    \blank
-          Restitution publique du workshop. Performance dans le Hall de l'école.
+         \externalfigure [../IMAGES/ARC/photos/Image 7.png][width=4cm]       
+         \externalfigure [../IMAGES/ARC/photos/Image 13.png][width=4cm] 
+         \externalfigure [../IMAGES/ARC/photos/Image 14.png][width=4cm] 
+         \externalfigure [../IMAGES/ARC/photos/Image 15.png][width=4cm] 
+          \externalfigure [../IMAGES/ARC/photos/Image 10.png][width=4cm]
+         \externalfigure [../IMAGES/ARC/photos/Image 16.png][width=4cm]       
        
-              
-
-\page
-         \externalfigure [../IMAGES/ARC/photos/Tentative restitution 1.jpg]  [width=10cm]  \blank
-                           Tentative de première restitution entre les deux sessions.
-\page
-           \externalfigure [../IMAGES/poster/poster2.jpeg]  [width=10cm]  \blank
-Affiche de la Print-party : dernière session de workshop.
-
-\title {No-\crlf feature}
-\startalignment[right]
-
-No Feature est une invitation à développer un espace de travail collectif autour de la typographie dans le cadre de la section quatrième année design graphique, et plus largement au sein de l'école supérieure d'art et design de Valence. Le projet vise à rassembler des énergies autour d'objets typographiques, quels que soient leur avancement. Les typographies sont partagées de préférence au format UFO, et publiées sous licence libre, invitant les utilisateurs à modifier ou enrichir les projets. Cet espace est ouvert à tous les étudiants de l'école, aux anciens étudiants ainsi qu'aux professeurs.
-Les fichiers de travail sont rassemblés dans un dépôt git. Le site github.com fonctionne comme hébergeur. Un mode d’emploi pour collaborer en utilisant ces outils est à venir.\blank
-\stopalignment
-
-
-          \externalfigure [../IMAGES/ARC/photos/P1070575.JPG] [width=4cm]\blank
-         \externalfigure [../IMAGES/ARC/photos/P1070576.JPG] [width=4cm]
-         \externalfigure [../IMAGES/ARC/photos/P1070579.JPG] [width=4cm]    \blank          
-         \externalfigure [../IMAGES/ARC/photos/P1070582.JPG] [width=4cm]\blank         
-         \externalfigure [../IMAGES/ARC/photos/P1070592.JPG] [width=4cm] \blank        
-         \externalfigure [../IMAGES/ARC/photos/P1070595.JPG] [width=4cm]    \blank
-         
+         \externalfigure [../IMAGES/ARC/photos/Image 18.png][width=4cm] 
+           \externalfigure [../IMAGES/ARC/photos/Image 17.png][width=4cm] 
+         \externalfigure [../IMAGES/ARC/photos/Image 19.png][width=4cm] 
          \page
-                     \externalfigure [../IMAGES/ARC/photos/07.png][width=10cm]\blank
-            \externalfigure [../IMAGES/ARC/photos/09.png][width=5cm]\blank
-                     \externalfigure[../IMAGES/ARC/photos/http---no-feature.github.com-.jpg][width=20cm]
-        \blank
-
-     Page de la fonderie de No-Feature qui réunit toutes les productions typographiques.
-     
-         \stopcolumns
+          
+         \externalfigure [../IMAGES/ARC/photos/Image 21.png][width=4cm] 
+         \externalfigure [../IMAGES/ARC/photos/Image 22.png][width=4cm] 
+         \externalfigure [../IMAGES/ARC/photos/Image 23.png][width=4cm] 
+         \externalfigure [../IMAGES/ARC/photos/Image 24.png][width=4cm] 
+         \externalfigure [../IMAGES/ARC/photos/Image 25.png][width=4cm] 
+         \externalfigure [../IMAGES/ARC/photos/Image 26.png][width=4cm] 
+          \logosssb {Repas collectif. \crlf Essais des outils en extérieur.}\blank  
          
-            \externalfigure [../IMAGES/ARC/photos/04.png][width=8cm]\blank
-             \externalfigure [../IMAGES/ARC/photos/05.png][width=8cm]
-          Travail de la typographie par Alice et Gwenaël.
-          Page de droite, blog en ligne de collecte des pistes de travail pour la 3\high{e} session.
+	\page
+          \externalfigure [../IMAGES/ARC/photos/Image 3.png][width=6cm]
+                  \logosssb {Affichage pour la performance dans le hall.}
+         
+
+ 	\page
+         \section {Aerobic\crlf Computing}\blank
+	\logosssb {Croquis représentant \crlf nos comportements \crlf  avec un ordinateur}  \blank
+
+  \externalfigure [../IMAGES/poster/dessins01.jpg] [width=4cm] 
+   \externalfigure [../IMAGES/poster/dessins02.jpg] [width=4cm] 
+  \externalfigure [../IMAGES/poster/dessins03.jpg] [width=4cm] 
+  \externalfigure [../IMAGES/poster/dessins04.jpg] [width=4cm] 
+   \externalfigure [../IMAGES/poster/dessins06.jpg] [width=4.5cm] 
+  \externalfigure [../IMAGES/poster/dessins07.jpg] [width=4cm] 
+  \externalfigure [../IMAGES/poster/dessins08.jpg] [width=4cm] 
+  \externalfigure [../IMAGES/poster/dessins09.jpg] [width=4.5cm] 
+  \externalfigure [../IMAGES/poster/dessins10.jpg] [width=4cm] 
+  \externalfigure [../IMAGES/poster/dessins11.jpg] [width=4cm] 
+ 
 
 
-        \blank
+\page
 
-  
-        \useURL [uppendown.hotglue.me]
-        \useURL [no-feature.github.com] 
-        \page
-        
-        \startcolumns[n=4]
+
+\externalfigure [../IMAGES/ARC/photos/Image 27.png][width=9cm] \blank 
+\logosssb {Restitution publique du \crlf workshop : performance \crlf dans le Hall de l'école.} \blank
+\page
+   \externalfigure [../IMAGES/ARC/photos/Image 28.png] [width=8cm]   \blank
+         \externalfigure [../IMAGES/ARC/photos/Image 4.png] [width=7cm]
        
-        
+         \blank
+  
+\page
+         \externalfigure [../IMAGES/ARC/photos/Tentative restitution 1.jpg]  [width=8cm]  \blank
+               \logosssb {Tentative de première restitution entre les deux sessions.}
+\stopalignment
+\stopcolumns               
+\
+\chapter{No Feature}
+\startcolumns[n=2]
+\startalignment[right]
+\setupinterlinespace[12.5pt]    
+\logossb{No Feature est une invitation à développer un espace de travail collectif autour de la typographie dans le cadre de la section quatrième année design graphique, et plus largement au sein de l'école supérieure d'art et design de Valence. \crlf
+Le projet vise à rassembler des énergies autour d'objets typographiques, quels que soient leur avancement. Les typographies sont partagées de préférence au format UFO, et publiées sous licence libre, invitant les utilisateurs à modifier ou enrichir les projets.
+Cet espace est ouvert à tous les étudiants de l'école, aux anciens étudiants ainsi qu'aux professeurs.\crlf
+Les fichiers de travail sont rassemblés dans un \crlf dépôt git.} \blank
+\page
 
-{\tfxx-- A --
+
+ \externalfigure [../IMAGES/ARC/photos/P1070576.JPG] [width=4cm]
+          \externalfigure [../IMAGES/ARC/photos/P1070575.JPG] [width=4cm]
+         \externalfigure [../IMAGES/ARC/photos/P1070579.JPG] [width=4cm]          
+         \externalfigure [../IMAGES/ARC/photos/P1070582.JPG] [width=4cm]        
+         \externalfigure [../IMAGES/ARC/photos/P1070592.JPG] [width=4cm]     
+         \externalfigure [../IMAGES/ARC/photos/P1070595.JPG] [width=4cm] 
+ 
+         \page
+                     \externalfigure [../IMAGES/ARC/photos/07.png][width=8cm]\blank
+            \page
+                \externalfigure [../IMAGES/ARC/photos/04.png][width=8cm]\blank
+             \externalfigure [../IMAGES/ARC/photos/05.png][width=8cm]
+             \logosssb Travail de la typographie \crlf sur FontForge. \crlf
+            \page
+                     \externalfigure[../IMAGES/ARC/photos/http---no-feature.github.com-.jpg][width=8cm]
+                        
+        \blank
+\logosssb Page de la fonderie \crlf de No-Feature qui réunit \crlf toutes les productions \crlf typographiques. \blank
+            
+
+        \page
+       
+\setupinterlinespace[11pt]
+    \logossssb{-- A --
 pendown()
 left(70)
 forward(400)
@@ -544,15 +560,17 @@ left(90)
 forward(300)
 penup()}
 
-\stopcolumns
+ \chapter{Hotglue}
+         \externalfigure [../IMAGES/ARC/photos/http---uppendown.hotglue.me-Pistes de recherche du projet en relation au trait .jpg] [width=6cm]
+        \logosssb {uppendown.hotglue.me-\crlf Pistes de recherche du projet en relation au trait.}
+ 
 \page
+\externalfigure [../IMAGES/poster/poster2.jpeg][width=8cm]          
+logosssb {Affiche de la Print-party : \crlf dernière session de workshop.}
 
-\startcolumns[n=2]
- \title{Hotglue}
-         \externalfigure [../IMAGES/ARC/photos/http---uppendown.hotglue.me-Pistes de recherche du projet en relation au trait .jpg] [width=10cm]
-        \tfxx {uppendown.hotglue.me-Pistes de recherche du projet en relation au trait}
-        \stopcolumns
+
 \stopalignment
+\stopcolumns 
 
 \stoptext 
 \stopcomponent 

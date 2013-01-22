@@ -7,19 +7,21 @@
 \definesimplefont[logot][logobold][size=55pt]
 \definesimplefont[logosb][logobold][size=14pt]
 \definesimplefont[logossb][logoregular][size=11.5pt]
-\definesimplefont[logosssb][logoregularitalic][size=11.5pt]
+\definesimplefont[logosssb][logonote][size=10pt]
+\definesimplefont[logossssb][logonote][size=8pt]
+\definesimplefont[logosssssb][logocitationitalic][size=10pt]
 
 %citations
-\definesimplefont[logocit][logocitation][size=9.5pt]
-\definesimplefont[logoregit][logoregularitalic][size=9.5pt]
+\definesimplefont[logocit][logomedium][size=11.5pt]
+\definesimplefont[logo][logo][size=11.5pt]
 
 %titres et sous titres
 \setuphead[chapter][style=\logot, number=no]
-\setuphead[section][style=\logosb]
+\setuphead[section][style=\logosb, number=no]
 \setuphead[subsubsubject][style=\logossb]
 \setuphead[subsubsubsubject][style=\logosssb]
 \setuphead[univl][style=\citations]
-
+ 
 % ??
 \starttypescript [sans] [logoregular] 
     \definefontsynonym [Sans] [name:logoregular] [handling=pure]
@@ -31,7 +33,7 @@
   \setupbodyfont[logoregular, 11.5pt]
 
 %réglage interlignage
-%\setupinterlinespace[9pt]     
+%\setupinterlinespace[12.5pt]     
 
 
 \stopenvironment

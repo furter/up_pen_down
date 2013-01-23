@@ -3,7 +3,7 @@
 \definefontfeature[otfeatures][mode=node, script=latn, language=dflt, liga=yes, dlig=yes, rlig=yes, calt=yes, clig=yes, init=yes, medi=yes, fina=yes, isol=yes, mkmk=yes, mark=yes, kern=yes, curs=yes]
    %TYPOGRAPHIE
 % Choix de la typographie du texte courant
-\usemodule[simplefonts]
+\usemodule[simplefonts][features=otfeatures]
 \definesimplefont[logot][logomedium][size=55pt]
 \definesimplefont[logosb][logomedium][size=14pt]
 \definesimplefont[logossb][logoregular][size=11.5pt]
@@ -22,8 +22,6 @@
 \setuphead[subsubsubject][style=\logossb]
 \setuphead[subsubsubsubject][style=\logosssb]
 \setuphead[univl][style=\citations]
-
- \definefontfeature[otfeatures][mode=node, script=latn, language=dflt, liga=yes, dlig=yes, rlig=yes, calt=yes, clig=yes, init=yes, medi=yes, fina=yes, isol=yes, mkmk=yes, mark=yes, kern=yes, curs=yes]
  
 % ??
    \starttypescript [sans] [logoregular]
